@@ -1,8 +1,10 @@
 [
   {
-    "name": "mockName",
-    "introduction": "mockIntro",
-    "companyName": "mockCompanyName",
-    "companyLocation": "대구광역시 달성군 구지면 창리로11길 93"
+    "name": "예시입니다.",
+    "explanation": "예시입니다.",
+    "companyName": "예시입니다.",
+    "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
+    "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
+    "type": "front-end"
   }
 ]
