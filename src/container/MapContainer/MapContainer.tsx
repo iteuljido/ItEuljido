@@ -1,10 +1,12 @@
 import Map from "components/Map/Map";
 import { useEffect } from "react";
 import DB from "data/db.json";
+import { useRecoilValue } from "recoil";
+import { coordsAtom } from "atom/coords";
 
 const { kakao } = window;
 
-class MapSingleton {
+export class MapSingleton {
   private static instance: MapSingleton;
 
   private constructor() {
@@ -25,7 +27,7 @@ class MapSingleton {
     const container = document.getElementById("map");
     const options = {
       center: new window.kakao.maps.LatLng(lat, long),
-      level: 12,
+      level: 6,
     };
 
     this.map = new window.kakao.maps.Map(container, options);
@@ -72,6 +74,8 @@ class MapSingleton {
 }
 
 const MapContainer = () => {
+  const testValue = useRecoilValue(coordsAtom);
+  console.log(testValue);
   useEffect(() => {
     MapSingleton.getInstance().initMap();
   }, []);
