@@ -1,69 +1,46 @@
 import Map from "components/Map/Map";
-import { useEffect } from "react";
+import { useEffect, useState, useCallback } from "react";
+import DB from "data/db.json";
 
-class MapSingleton {
-  private static instance: MapSingleton;
-
-  private constructor() {
-    /** */
-  }
-
-  public map: any;
-  public isLoaded = false;
-
-  public initMap() {
-    if (this.isLoaded) {
-      return;
-    }
-
+const MapContainer = () => {
+  const kakaoMapHandler = useCallback(() => {
+    const { kakao } = window;
     let lat = 36;
     let long = 127;
 
     const container = document.getElementById("map");
     const options = {
-      center: new window.kakao.maps.LatLng(lat, long),
-      level: 12,
+      center: new kakao.maps.LatLng(lat, long),
+      level: 10,
     };
 
-    this.map = new window.kakao.maps.Map(container, options);
+    const map = new kakao.maps.Map(container, options);
 
-    const mapTypeControl = new window.kakao.maps.MapTypeControl();
-    MapSingleton.getInstance().map.addControl(
-      mapTypeControl,
-      window.kakao.maps.ControlPosition.TOPRIGHT
-    );
+    const geocoder = new kakao.maps.services.Geocoder();
+    for (let i = 0; i < DB.length; i += 1) {
+      console.log(DB[i].companyLocation);
+      geocoder.addressSearch(DB[i].companyLocation, (result: any) => {
+        const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
-    const zoomControl = new window.kakao.maps.ZoomControl();
-    MapSingleton.getInstance().map.addControl(
-      zoomControl,
-      window.kakao.maps.ControlPosition.RIGHT
-    );
+        const marker = new kakao.maps.Marker({
+          map,
+          position: coords,
+        });
 
-    // const marker = new window.kakao.maps.Marker({});
+        const infowindow = new kakao.maps.InfoWindow({
+          content: `<div style="width:150px;text-align:center;padding:6px 0;">${DB[i].name}</div>`,
+        });
+        infowindow.open(map, marker);
 
-    // marker.setMap(MapSingleton.getInstance().map);
-    this.isLoaded = true;
-  }
-  static getInstance() {
-    if (MapSingleton.instance === undefined) {
-      MapSingleton.instance = new MapSingleton();
+        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+        // map.setCenter(coords);
+      });
     }
-
-    return MapSingleton.instance;
-  }
-}
-
-const MapContainer = () => {
-  useEffect(() => {
-    MapSingleton.getInstance().initMap();
   }, []);
 
   useEffect(() => {
-    return () => {
-      MapSingleton.getInstance().isLoaded = false;
-    };
+    kakaoMapHandler();
   }, []);
-
   return <Map />;
 };
 

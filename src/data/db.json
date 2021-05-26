@@ -2,16 +2,16 @@
   {
     "name": "권순관",
     "explanation": "일단 설명 쓰자",
-    "companyName": "갈 회사를 찾는 중입니다.",
+    "companyName": "대구소프트웨어고등학교",
     "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
     "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
     "type": "front-end"
   },
   {
     "name": "최진우",
-    "explanation": "고기 사준데",
+    "explanation": "만나면 고기 사준다",
     "companyName": "class101",
-    "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
+    "companyLocation": "서울 중구 통일로 10 연세재단세브란스빌딩",
     "profileImg": "https://avatars.githubusercontent.com/u/49791336?v=4",
     "type": "back-end"
   },
@@ -19,8 +19,8 @@
     "name": "디자인",
     "explanation": "디자이너",
     "companyName": "dribble",
-    "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
-    "profileImg": "",
+    "companyLocation": "경기도 성남시 분당구 삼평동 627",
+    "profileImg": "https://cdn.pixabay.com/photo/2018/05/08/21/28/dribbble-3384011_960_720.png",
     "type": "design"
   }
 ]
