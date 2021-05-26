@@ -9,9 +9,11 @@ const NavElement = ({
   companyLocation,
   profileImg,
   type,
-}: DBType) => {
+  coords,
+  userSelector,
+}: any) => {
   return (
-    <NavElementSection>
+    <NavElementSection onClick={() => userSelector(coords)}>
       <UserWrapper>
         <UserImg src={profileImg} />
         <UserInfoSection>

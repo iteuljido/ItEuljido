@@ -1,8 +1,10 @@
-import NavElement from "components-element/NavElement/NavElement";
 import Nav from "components/Nav/Nav";
-import DB from "data/db.json";
-import { useEffect } from "react";
-import { DBType } from "type/DBType/DBType";
+import useSearch from "hook/search/useSearch";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { userAtom } from "atom/user";
+import NavElemnetItem from "components-element/NavElement/NavElementItem";
+import { coordsAtom } from "atom/coords";
+import { useCallback } from "react";
 /*global kakao*/
 
 declare global {
@@ -11,29 +13,30 @@ declare global {
   }
 }
 
+const { kakao } = window;
+
 const NavContainer = () => {
-  const userList = DB.map((data, index) => {
-    const {
-      name,
-      explanation,
-      companyName,
-      companyLocation,
-      profileImg,
-      type,
-    } = data;
-    return (
-      <NavElement
-        key={index}
-        name={name}
-        explanation={explanation}
-        companyName={companyName}
-        companyLocation={companyLocation}
-        profileImg={profileImg}
-        type={type}
-      />
-    );
-  });
-  return <Nav userList={userList} />;
+  const { filterItem, search, onChangeSearch } = useSearch();
+  const user = useRecoilValue(userAtom);
+  const filterUserList = filterItem(user, "name");
+  const setCoords = useSetRecoilState(coordsAtom);
+
+  const userSelector = useCallback((coords) => {
+    setCoords(coords);
+  }, []);
+
+  return (
+    <Nav search={search} onChangeSearch={onChangeSearch}>
+      {filterUserList.map((data: any, index: number) => (
+        <NavElemnetItem
+          key={index}
+          data={data}
+          index={index}
+          userSelector={userSelector}
+        />
+      ))}
+    </Nav>
+  );
 };
 
 export default NavContainer;

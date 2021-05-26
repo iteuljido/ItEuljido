@@ -1,7 +1,5 @@
 /*global kakao*/
 
-import styled from "styled-components";
-
 declare global {
   interface Window {
     kakao: any;
