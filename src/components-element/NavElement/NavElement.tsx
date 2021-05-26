@@ -9,15 +9,19 @@ const NavElement = ({
   companyLocation,
   profileImg,
   type,
-}: DBType) => {
+  coords,
+  userSelector,
+}: any) => {
   return (
-    <NavElementSection>
+    <NavElementSection onClick={() => userSelector(coords)}>
       <UserWrapper>
         <UserImg src={profileImg} />
         <UserInfoSection>
           <UserInfoWrapper>
-            <UserName>{name}</UserName>
-            <UserCompanyName>@{companyName}</UserCompanyName>
+            <UserNameWrapper>
+              <UserName>{name}</UserName>
+              <UserCompanyName>@{companyName}</UserCompanyName>
+            </UserNameWrapper>
             <LabelElement title={type} />
           </UserInfoWrapper>
           <UserDescription>{explanation}</UserDescription>
@@ -28,6 +32,14 @@ const NavElement = ({
 };
 
 export default NavElement;
+
+const UserNameWrapper = styled.div`
+  display: flex;
+  align-items: baseline;
+  & > * + * {
+    margin-left: 4px;
+  }
+`;
 
 const NavElementSection = styled.section`
   width: 100%;
@@ -43,17 +55,15 @@ const UserWrapper = styled.div`
 `;
 
 const UserInfoSection = styled.section`
+  width: 100%;
   display: flex;
   flex-direction: column;
 `;
 
 const UserInfoWrapper = styled.div`
+  width: 100%;
   display: flex;
-  align-items: baseline;
-
-  & > * + * {
-    margin-left: 4px;
-  }
+  justify-content: space-between;
 `;
 
 const UserImg = styled.img`
