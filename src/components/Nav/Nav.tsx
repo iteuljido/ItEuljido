@@ -18,7 +18,7 @@ export default Nav;
 
 const NavSection = styled.div`
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   /* background-color: #cacaca; */
   height: 100vh;
   padding: 10px;
