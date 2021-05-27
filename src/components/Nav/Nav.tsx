@@ -35,7 +35,6 @@ const NavSection = styled.div`
   max-width: 400px;
   /* background-color: #cacaca; */
   height: 100vh;
-  padding: 10px;
   overflow: auto;
 `;
 

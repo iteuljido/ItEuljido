@@ -19,10 +19,12 @@ const { kakao } = window;
 const NavContainer = () => {
   const { filterItem, search, onChangeSearch } = useSearch();
   const user = useRecoilValue(userAtom);
+  const selectEelement = useSetRecoilState(coordsAtom);
   const filterUserList = filterItem(user, "name");
 
   const userSelector = useCallback((coords) => {
     MapSingleton.getInstance().map.panTo(coords);
+    selectEelement(coords);
   }, []);
 
   return (
