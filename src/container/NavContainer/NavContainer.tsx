@@ -22,10 +22,14 @@ const NavContainer = () => {
   const selectEelement = useSetRecoilState(coordsAtom);
   const filterUserList = filterItem(user, "name");
 
-  const userSelector = useCallback((coords) => {
-    MapSingleton.getInstance().map.panTo(coords);
-    selectEelement(coords);
-  }, []);
+  const userSelector = useCallback(
+    (coords) => {
+      MapSingleton.getInstance().map.setCenter(coords);
+      MapSingleton.getInstance().map.setLevel(2);
+      selectEelement(coords);
+    },
+    [selectEelement]
+  );
 
   return (
     <Nav search={search} onChangeSearch={onChangeSearch}>
