@@ -1,9 +1,7 @@
 import { coordsAtom } from "atom/coords";
 import LabelElement from "components-element/LabelElement/LabelElement";
-import { useMemo } from "react";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
-import { DBType } from "type/DBType/DBType";
 import { darken } from "polished";
 interface INavElementSection {
   isSelectedItem: boolean;

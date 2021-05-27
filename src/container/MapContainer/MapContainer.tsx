@@ -27,7 +27,7 @@ export class MapSingleton {
     const container = document.getElementById("map");
     const options = {
       center: new window.kakao.maps.LatLng(lat, long),
-      level: 6,
+      level: 12,
     };
 
     this.map = new window.kakao.maps.Map(container, options);

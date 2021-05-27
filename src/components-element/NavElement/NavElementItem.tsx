@@ -1,4 +1,4 @@
-import useCoords from "lib/coords/coords";
+import useCoords from "hook/coords/coords";
 import React, { memo } from "react";
 import NavElement from "./NavElement";
 

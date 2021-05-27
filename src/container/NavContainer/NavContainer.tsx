@@ -6,15 +6,12 @@ import NavElemnetItem from "components-element/NavElement/NavElementItem";
 import { coordsAtom } from "atom/coords";
 import { useCallback } from "react";
 import { MapSingleton } from "container/MapContainer/MapContainer";
-/*global kakao*/
 
 declare global {
   interface Window {
     kakao: any;
   }
 }
-
-const { kakao } = window;
 
 const NavContainer = () => {
   const { filterItem, search, onChangeSearch } = useSearch();
@@ -25,7 +22,7 @@ const NavContainer = () => {
   const userSelector = useCallback(
     (coords) => {
       MapSingleton.getInstance().map.setCenter(coords);
-      MapSingleton.getInstance().map.setLevel(2);
+      MapSingleton.getInstance().map.setLevel(4);
       selectEelement(coords);
     },
     [selectEelement]
