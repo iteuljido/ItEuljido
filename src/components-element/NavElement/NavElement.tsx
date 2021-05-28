@@ -17,7 +17,6 @@ const NavElement = ({
   coords,
   userSelector,
 }: any) => {
-  console.log(coords);
   const selectElement = useRecoilValue(coordsAtom);
   const isSelectedItem = coords === selectElement ? true : false;
 
