@@ -26,7 +26,7 @@ const LabelElement = ({ title }: Props) => {
       default:
         return "black";
     }
-  }, []);
+  }, [title]);
 
   const primaryBackColor = useMemo(() => {
     switch (title) {
@@ -39,7 +39,7 @@ const LabelElement = ({ title }: Props) => {
       default:
         return "black";
     }
-  }, []);
+  }, [title]);
 
   return (
     <LabelElementSection primaryBackColor={primaryBackColor}>

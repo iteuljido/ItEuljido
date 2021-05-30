@@ -1,6 +1,11 @@
+import { coordsAtom } from "atom/coords";
 import LabelElement from "components-element/LabelElement/LabelElement";
+import { useRecoilValue } from "recoil";
 import styled from "styled-components";
-import { DBType } from "type/DBType/DBType";
+import { darken } from "polished";
+interface INavElementSection {
+  isSelectedItem: boolean;
+}
 
 const NavElement = ({
   name,
@@ -12,8 +17,14 @@ const NavElement = ({
   coords,
   userSelector,
 }: any) => {
+  const selectElement = useRecoilValue(coordsAtom);
+  const isSelectedItem = coords === selectElement ? true : false;
+
   return (
-    <NavElementSection onClick={() => userSelector(coords)}>
+    <NavElementSection
+      onClick={() => userSelector(coords)}
+      isSelectedItem={isSelectedItem}
+    >
       <UserWrapper>
         <UserImg src={profileImg} />
         <UserInfoSection>
@@ -41,11 +52,21 @@ const UserNameWrapper = styled.div`
   }
 `;
 
-const NavElementSection = styled.section`
+const NavElementSection = styled.section<INavElementSection>`
   width: 100%;
   padding: 10px 0px;
   border-bottom: 1px solid rgb(245, 245, 245);
   cursor: pointer;
+  padding: 10px;
+  background-color: ${(props) =>
+    props.isSelectedItem ? `${darken(0.05, "#fff")}` : "#fff"};
+
+  &:hover {
+    background-color: ${(props) =>
+      props.isSelectedItem
+        ? `${darken(0.05, "#fff")}`
+        : `${darken(0.02, "#fff")}`};
+  }
 `;
 
 const UserWrapper = styled.div`

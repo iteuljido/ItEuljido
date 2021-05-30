@@ -5,7 +5,7 @@ import { userAtom } from "atom/user";
 import NavElemnetItem from "components-element/NavElement/NavElementItem";
 import { coordsAtom } from "atom/coords";
 import { useCallback } from "react";
-/*global kakao*/
+import { MapSingleton } from "container/MapContainer/MapContainer";
 
 declare global {
   interface Window {
@@ -13,17 +13,20 @@ declare global {
   }
 }
 
-const { kakao } = window;
-
 const NavContainer = () => {
   const { filterItem, search, onChangeSearch } = useSearch();
   const user = useRecoilValue(userAtom);
+  const selectEelement = useSetRecoilState(coordsAtom);
   const filterUserList = filterItem(user, "name");
-  const setCoords = useSetRecoilState(coordsAtom);
 
-  const userSelector = useCallback((coords) => {
-    setCoords(coords);
-  }, []);
+  const userSelector = useCallback(
+    (coords) => {
+      MapSingleton.getInstance().map.setCenter(coords);
+      MapSingleton.getInstance().map.setLevel(4);
+      selectEelement(coords);
+    },
+    [selectEelement]
+  );
 
   return (
     <Nav search={search} onChangeSearch={onChangeSearch}>
