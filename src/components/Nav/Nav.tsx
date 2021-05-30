@@ -1,18 +1,16 @@
-import NavElement from "components-element/NavElement/NavElement";
-import NavContainer from "container/NavContainer/NavContainer";
 import styled from "styled-components";
 /**
  * TODO: 상단에 검색바 / 다음에 element 요소들
  * @returns
  */
 
-type Nav = {
+type Props = {
   children: JSX.Element[];
   search: any;
   onChangeSearch: any;
 };
 
-const Nav = ({ children, search, onChangeSearch }: Nav) => {
+const Nav = ({ children, search, onChangeSearch }: Props) => {
   return (
     <>
       <NavSection>

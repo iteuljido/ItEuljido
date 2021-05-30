@@ -1,9 +1,7 @@
 import { coordsAtom } from "atom/coords";
 import LabelElement from "components-element/LabelElement/LabelElement";
-import { useMemo } from "react";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
-import { DBType } from "type/DBType/DBType";
 import { darken } from "polished";
 interface INavElementSection {
   isSelectedItem: boolean;
@@ -19,7 +17,6 @@ const NavElement = ({
   coords,
   userSelector,
 }: any) => {
-  console.log(coords);
   const selectElement = useRecoilValue(coordsAtom);
   const isSelectedItem = coords === selectElement ? true : false;
 
