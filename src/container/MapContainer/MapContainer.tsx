@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import DB from "data/db.json";
 import _, { groupBy } from "lodash";
 import util from "util";
-
+import "./MapInfoElement.scss";
 const { kakao } = window;
 
 export class MapSingleton {
@@ -74,13 +74,58 @@ export class MapSingleton {
         // console.log("marker", marker);
         markerTemp.push(marker);
 
-        const infowindow = new kakao.maps.InfoWindow({
-          content: `<div>${temp.map((data: any) => {
-            return data;
-          })}</div>`,
+        // const infowindow = new kakao.maps.InfoWindow({
+        //   content: `<div>${temp.map((data: any) => {
+        //     return data;
+        //   })}</div>`,
+        // });
+        console.log(
+          "groupByDuplicatedComapny[keyName]",
+          groupByDuplicatedComapny[keyName]
+        );
+        const content = `
+        <div class="contentWrapper">
+          <div>Working in ${
+            groupByDuplicatedComapny[keyName][0].companyName
+          }</div>
+            ${temp
+              .map((data: any, index: number) => {
+                console.log("data", data);
+                return `
+                <div class="contentItem">
+                  <img class="profile" src=${groupByDuplicatedComapny[keyName][index].profileImg} alt="" />
+                    <div>${data}</div> 
+                  </div>`;
+              })
+              .join("")}
+                  </div>
+                </div>`;
+
+        const overlay = new kakao.maps.CustomOverlay({
+          content,
+          map: this.map,
+          position: marker.getPosition(),
+          xAnchor: -0.2,
+          yAnchor: 0.6,
         });
 
-        infowindow.open(this.map, marker);
+        kakao.maps.event.addListener(marker, "click", () => {
+          overlay.setMap(this.map);
+        });
+
+        kakao.maps.event.addListener(marker, "mouseover", () => {
+          overlay.setMap(this.map);
+        });
+
+        // kakao.maps.event.addListener(marker, "mouseout", () => {
+        //   overlay.setMap(null);
+        // });
+
+        kakao.maps.event.addListener(this.map, "click", () => {
+          overlay.setMap(null);
+        });
+
+        overlay.setMap(null);
       });
     }
 
@@ -99,9 +144,44 @@ export class MapSingleton {
         position: coords,
       });
       markerTemp.push(marker);
+      const content = `
+            <div class="contentWrapper">
+              <div>Working in ${oneCompany[idx].companyName}</div>
+                <div class="contentItem">
+                  <img class="profile" src=${oneCompany[idx].profileImg} alt="" />
+                    <div>${oneCompany[idx].name}</div> 
+                  </div>
+                </div>
+              </div>`;
+
+      const overlay = new kakao.maps.CustomOverlay({
+        content,
+        map: this.map,
+        position: marker.getPosition(),
+        xAnchor: -0.2,
+        yAnchor: 0.6,
+      });
+
+      kakao.maps.event.addListener(marker, "click", () => {
+        overlay.setMap(this.map);
+      });
+
+      kakao.maps.event.addListener(marker, "mouseover", () => {
+        overlay.setMap(this.map);
+      });
+
+      // kakao.maps.event.addListener(marker, "mouseout", () => {
+      //   overlay.setMap(null);
+      // });
+
+      kakao.maps.event.addListener(this.map, "click", () => {
+        overlay.setMap(null);
+      });
+
+      overlay.setMap(null);
 
       // const infowindow = new kakao.maps.InfoWindow({
-      //   content: `<div>${data.name}</div>`,
+      //   content: `<div>${oneCompany[idx].name}</div>`,
       // });
       // infowindow.open(this.map, marker);
     }
@@ -111,23 +191,12 @@ export class MapSingleton {
       averageCenter: true,
       minLevel: 5,
       disableClickZoom: true,
-      calculator: [20, 50, 100],
-      styles: [
-        {
-          width: "50px",
-          height: "50px",
-          "background-color": "red",
-        },
-        { width: "60px", height: "60px" },
-        { width: "94px", height: "94px" },
-      ],
+      calculator: [1, 3, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
     });
 
     kakao.maps.event.addListener(clusterer, "clusterclick", (cluster: any) => {
-      // 현재 지도 레벨에서 1레벨 확대한 레벨
-      level = this.map.getLevel() - 1;
+      level = this.map.getLevel() - 2;
 
-      // 지도를 클릭된 클러스터의 마커의 위치를 기준으로 확대합니다
       this.map.setLevel(level, { anchor: cluster.getCenter() });
     });
     //
