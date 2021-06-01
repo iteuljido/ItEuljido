@@ -14,12 +14,14 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
   return (
     <>
       <NavSection>
-        <SearchInput
-          type="text"
-          value={search}
-          onChange={onChangeSearch}
-          placeholder="이름으로 검색"
-        />
+        <SearchWrapper>
+          <SearchInput
+            type="text"
+            value={search}
+            onChange={onChangeSearch}
+            placeholder="이름으로 검색"
+          />
+        </SearchWrapper>
         {children}
       </NavSection>
     </>
@@ -34,6 +36,10 @@ const NavSection = styled.div`
   /* background-color: #cacaca; */
   height: 100vh;
   overflow: auto;
+`;
+
+const SearchWrapper = styled.div`
+  padding: 10px;
 `;
 
 const SearchInput = styled.input`
