@@ -5,8 +5,8 @@ import styled from "styled-components";
 const App = () => {
   return (
     <AppSection>
-      <NavContainer />
       <MapContainer />
+      <NavContainer />
     </AppSection>
   );
 };
