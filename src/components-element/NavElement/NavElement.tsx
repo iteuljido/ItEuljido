@@ -16,10 +16,10 @@ const NavElement = ({
   type,
   coords,
   userSelector,
+  tagImg,
 }: any) => {
   const selectElement = useRecoilValue(coordsAtom);
   const isSelectedItem = coords === selectElement ? true : false;
-
   return (
     <NavElementSection
       onClick={() => userSelector(coords)}
@@ -31,7 +31,13 @@ const NavElement = ({
           <UserInfoWrapper>
             <UserNameWrapper>
               <UserName>{name}</UserName>
-              <UserCompanyName>@{companyName}</UserCompanyName>
+              {tagImg === null ? (
+                <UserCompanyName>@{companyName}</UserCompanyName>
+              ) : (
+                <div>
+                  <TagImg src={tagImg} alt="" />
+                </div>
+              )}
             </UserNameWrapper>
             <LabelElement title={type} />
           </UserInfoWrapper>
@@ -47,6 +53,7 @@ export default NavElement;
 const UserNameWrapper = styled.div`
   display: flex;
   align-items: baseline;
+
   & > * + * {
     margin-left: 4px;
   }
@@ -101,6 +108,19 @@ const UserName = styled.div`
 
 const UserCompanyName = styled.div`
   font-size: 12px;
+  overflow: hidden;
+  height: 100%;
+  /* width: 100%; */
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;
+
+const TagImg = styled.img`
+  width: 40px;
+  /* display: block; */
+  vertical-align: bottom;
 `;
 
 const NameWrapper = styled.div`
