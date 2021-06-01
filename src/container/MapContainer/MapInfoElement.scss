@@ -1,0 +1,35 @@
+/* .InfoWindowWrapper {
+  padding: 20px;
+  background-color: red;
+} */
+
+.contentWrapper {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  /* top: -65px; */
+  box-shadow: 10px 0px 40px rgb(0 0 0 / 20%);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+
+  & > * + * {
+    margin-top: 10px;
+  }
+}
+
+.contentItem {
+  display: flex;
+  align-items: center;
+
+  & > * + * {
+    margin-left: 10px;
+  }
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}

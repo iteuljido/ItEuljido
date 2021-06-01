@@ -14,12 +14,14 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
   return (
     <>
       <NavSection>
-        <SearchInput
-          type="text"
-          value={search}
-          onChange={onChangeSearch}
-          placeholder="이름으로 검색"
-        />
+        <SearchWrapper>
+          <SearchInput
+            type="text"
+            value={search}
+            onChange={onChangeSearch}
+            placeholder="이름으로 검색"
+          />
+        </SearchWrapper>
         {children}
       </NavSection>
     </>
@@ -29,11 +31,18 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
 export default Nav;
 
 const NavSection = styled.div`
-  width: 100%;
-  max-width: 400px;
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 300px;
+  z-index: 9999;
+  /* width: 300px; */
   /* background-color: #cacaca; */
   height: 100vh;
   overflow: auto;
+`;
+
+const SearchWrapper = styled.div`
+  padding: 10px;
 `;
 
 const SearchInput = styled.input`
