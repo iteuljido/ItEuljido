@@ -57,6 +57,7 @@ const LabelElementSection = styled.section<ILabelElementSection>`
   background-color: ${(props) => props.primaryBackColor};
   font-size: 12px;
   border-radius: 8px;
+  height: 27px;
 `;
 
 const LabelItem = styled.div`
