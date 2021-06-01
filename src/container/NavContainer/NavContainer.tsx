@@ -22,7 +22,7 @@ const NavContainer = () => {
   const userSelector = useCallback(
     (coords) => {
       MapSingleton.getInstance().map.setCenter(coords);
-      MapSingleton.getInstance().map.setLevel(4);
+      MapSingleton.getInstance().map.setLevel(3);
       selectEelement(coords);
     },
     [selectEelement]
