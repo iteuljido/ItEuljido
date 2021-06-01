@@ -4,6 +4,8 @@ import DB from "data/db.json";
 import _, { groupBy } from "lodash";
 import util from "util";
 import "./MapInfoElement.scss";
+import MarkerImg from "assets/marker/map-marker-300.png";
+
 const { kakao } = window;
 
 export class MapSingleton {
@@ -64,25 +66,13 @@ export class MapSingleton {
       const search = (await Promise.all(promises)) as any;
 
       groupByDuplicatedComapny[keyName].forEach((data, index) => {
-        console.log(data);
-        console.log(search[0][0]);
         const coords = new kakao.maps.LatLng(search[0][0].y, search[0][0].x);
         const marker = new kakao.maps.Marker({
           map: this.map,
           position: coords,
         });
-        // console.log("marker", marker);
         markerTemp.push(marker);
 
-        // const infowindow = new kakao.maps.InfoWindow({
-        //   content: `<div>${temp.map((data: any) => {
-        //     return data;
-        //   })}</div>`,
-        // });
-        console.log(
-          "groupByDuplicatedComapny[keyName]",
-          groupByDuplicatedComapny[keyName]
-        );
         const content = `
         <div class="contentWrapper">
           <div>Working in ${
@@ -90,11 +80,11 @@ export class MapSingleton {
           }</div>
             ${temp
               .map((data: any, index: number) => {
-                console.log("data", data);
                 return `
                 <div class="contentItem">
                   <img class="profile" src=${groupByDuplicatedComapny[keyName][index].profileImg} alt="" />
-                    <div>${data}</div> 
+                    <div>(${groupByDuplicatedComapny[keyName][index].generation}기) ${data}</div> 
+                    <div>${groupByDuplicatedComapny[keyName][index].type}</div>
                   </div>`;
               })
               .join("")}
@@ -137,7 +127,6 @@ export class MapSingleton {
       });
 
       const search = (await Promise.all(promises)) as any;
-      console.log(search[0][0]);
       const coords = new kakao.maps.LatLng(search[0][0].y, search[0][0].x);
       const marker = new kakao.maps.Marker({
         map: this.map,
@@ -149,7 +138,8 @@ export class MapSingleton {
               <div>Working in ${oneCompany[idx].companyName}</div>
                 <div class="contentItem">
                   <img class="profile" src=${oneCompany[idx].profileImg} alt="" />
-                    <div>${oneCompany[idx].name}</div> 
+                    <div>(${oneCompany[idx].generation}기) ${oneCompany[idx].name}</div> 
+                    
                   </div>
                 </div>
               </div>`;
@@ -199,10 +189,7 @@ export class MapSingleton {
 
       this.map.setLevel(level, { anchor: cluster.getCenter() });
     });
-    //
     clusterer.addMarkers(markerTemp);
-    console.log("markerTemp", markerTemp.length);
-    //
     const mapTypeControl = new window.kakao.maps.MapTypeControl();
     MapSingleton.getInstance().map.addControl(
       mapTypeControl,
