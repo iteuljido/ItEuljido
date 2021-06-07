@@ -24,6 +24,7 @@ const NavElement = ({
   const member = useRecoilValue(userAtom);
   const setNavDeps = useSetRecoilState(navAtom);
   const setSelectComapnyName = useSetRecoilState(selectComapnyName);
+
   const workingMember = member.filter(
     (args) => args.companyName === companyName
   );

@@ -91,7 +91,6 @@ export class MapSingleton {
 
         kakao.maps.event.addListener(marker, "click", () => {
           overlay.setMap(this.map);
-          console.log(marker);
         });
 
         kakao.maps.event.addListener(this.map, "click", () => {
@@ -135,8 +134,6 @@ export class MapSingleton {
         position: marker.getPosition(),
         yAnchor: 2.1,
       });
-
-      console.log(overlay);
 
       kakao.maps.event.addListener(marker, "click", () => {
         overlay.setMap(this.map);

@@ -1,6 +1,6 @@
 import Nav from "components/Nav/Nav";
 import useSearch from "hook/search/useSearch";
-import { useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { userAtom } from "atom/user";
 import NavElemnetItem from "components-element/NavElement/NavElementItem";
 import { coordsAtom } from "atom/coords";
@@ -26,7 +26,9 @@ const NavContainer = () => {
   const filterUserList = filterItem(uniqueCompany, "companyName");
 
   const isNavItemSelected = useRecoilValue(navAtom);
-  const selectedNavCompanyName = useRecoilValue(selectComapnyName);
+  const [selectedNavCompanyName, setSelectedNavCompanyName] =
+    useRecoilState(selectComapnyName);
+  const setCoords = useSetRecoilState(coordsAtom);
   const setNavDeps = useSetRecoilState(navAtom);
 
   const userSelector = useCallback(
@@ -37,7 +39,6 @@ const NavContainer = () => {
     },
     [selectEelement]
   );
-  console.log(filterUserList);
 
   return (
     <>
@@ -54,7 +55,13 @@ const NavContainer = () => {
       {isNavItemSelected && (
         <SelectedItem>
           <CloseNavWrapper>
-            <IoMdClose onClick={() => setNavDeps(false)} />
+            <IoMdClose
+              onClick={() => {
+                setNavDeps(false);
+                setSelectedNavCompanyName("");
+                setCoords("");
+              }}
+            />
           </CloseNavWrapper>
           {company
             .filter((args) => args.companyName === selectedNavCompanyName)
