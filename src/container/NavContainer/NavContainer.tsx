@@ -4,29 +4,26 @@ import { useRecoilValue, useSetRecoilState } from "recoil";
 import { userAtom } from "atom/user";
 import NavElemnetItem from "components-element/NavElement/NavElementItem";
 import { coordsAtom } from "atom/coords";
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import { MapSingleton } from "container/MapContainer/MapContainer";
 import { navAtom, selectComapnyName } from "atom/nav";
-import { darken } from "polished";
-
+import { IoMdClose } from "react-icons/io";
 import _ from "lodash";
 import styled from "styled-components";
 import LabelElement from "components-element/LabelElement/LabelElement";
+
 declare global {
   interface Window {
     kakao: any;
   }
 }
 
-interface INavElementSection {
-  isSelectedItem: boolean;
-}
 const NavContainer = () => {
   const { filterItem, search, onChangeSearch } = useSearch();
   const company = useRecoilValue(userAtom);
   const uniqueCompany = _.uniqBy(company, "companyName");
   const selectEelement = useSetRecoilState(coordsAtom);
-  const filterUserList = filterItem(company, "companyName");
+  const filterUserList = filterItem(uniqueCompany, "companyName");
 
   const isNavItemSelected = useRecoilValue(navAtom);
   const selectedNavCompanyName = useRecoilValue(selectComapnyName);
@@ -40,10 +37,12 @@ const NavContainer = () => {
     },
     [selectEelement]
   );
+  console.log(filterUserList);
+
   return (
     <>
       <Nav search={search} onChangeSearch={onChangeSearch}>
-        {uniqueCompany.map((data: any, index: number) => (
+        {filterUserList.map((data: any, index: number) => (
           <NavElemnetItem
             key={index}
             data={data}
@@ -54,21 +53,23 @@ const NavContainer = () => {
       </Nav>
       {isNavItemSelected && (
         <SelectedItem>
-          <div onClick={() => setNavDeps(false)}>닫기</div>
+          <CloseNavWrapper>
+            <IoMdClose onClick={() => setNavDeps(false)} />
+          </CloseNavWrapper>
           {company
             .filter((args) => args.companyName === selectedNavCompanyName)
-            .map((data) => {
+            .map((data, index) => {
               const {
                 name,
-                type,
-                generation,
+                position,
+                // generation,
                 profileImg,
                 tagImg,
                 explanation,
-                companyName,
+                // companyName,
               } = data;
               return (
-                <UserWrapper>
+                <UserWrapper key={index}>
                   <UserImg src={profileImg} />
                   <UserInfoSection>
                     <UserInfoWrapper>
@@ -80,7 +81,7 @@ const NavContainer = () => {
                           </div>
                         )}
                       </UserNameWrapper>
-                      <LabelElement title={type} />
+                      <LabelElement title={position} />
                     </UserInfoWrapper>
                     <UserDescription>{explanation}</UserDescription>
                   </UserInfoSection>
@@ -100,6 +101,22 @@ const UserWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+`;
+
+const CloseNavWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+
+  & > * {
+    transition: all 0.25s ease;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      color: rgb(254, 79, 82);
+    }
+  }
 `;
 
 const UserNameWrapper = styled.div`
@@ -147,27 +164,10 @@ const UserName = styled.div`
   font-weight: bold;
 `;
 
-const UserCompanyName = styled.div`
-  font-size: 12px;
-  overflow: hidden;
-  height: 100%;
-  /* width: 100%; */
-  max-width: 110px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-`;
-
 const TagImg = styled.img`
   width: 40px;
-  /* display: block; */
   vertical-align: bottom;
 `;
-
-const NameWrapper = styled.div`
-  display: flex;
-`;
-
 const UserDescription = styled.div`
   font-size: 12px;
 `;

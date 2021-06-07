@@ -1,5 +1,4 @@
 import { coordsAtom } from "atom/coords";
-import LabelElement from "components-element/LabelElement/LabelElement";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { navAtom, selectComapnyName } from "atom/nav";
 import styled from "styled-components";

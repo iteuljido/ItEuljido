@@ -14,6 +14,7 @@ const useCoords = (location: string) => {
       setGeocoderObj(new kakao.maps.LatLng(result[0].y, result[0].x));
       // ma 위도 la 경도
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   return geocoderObj;
