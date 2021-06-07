@@ -1,48 +1,32 @@
 import { JobType } from "type/JobType/JobType";
 import { useMemo } from "react";
 import styled from "styled-components";
+import { transparentize } from "polished";
 
 type Props = {
   title: JobType | string;
 };
 
-interface ILabelElementSection {
-  primaryBackColor: string;
-}
-
-interface ICircle {
+interface IPromaryColor {
   primaryColor: string;
 }
 
 const LabelElement = ({ title }: Props) => {
   const primaryColor = useMemo(() => {
     switch (title) {
-      case "design":
-        return "rgb(234, 67, 62)";
-      case "front-end":
-        return "rgb(80, 242, 224)";
-      case "back-end":
-        return "rgb(59, 33, 212)";
-      default:
-        return "black";
-    }
-  }, [title]);
-
-  const primaryBackColor = useMemo(() => {
-    switch (title) {
-      case "design":
-        return "rgba(234, 67, 62, 0.2)";
-      case "front-end":
-        return "rgba(80, 242, 224, 0.2)";
-      case "back-end":
-        return "rgba(59, 33, 212, 0.2)";
+      case "Design":
+        return "#ea433e";
+      case "FrontEnd":
+        return "#50f2e0";
+      case "BackEnd":
+        return "#3b21d4";
       default:
         return "black";
     }
   }, [title]);
 
   return (
-    <LabelElementSection primaryBackColor={primaryBackColor}>
+    <LabelElementSection primaryColor={primaryColor}>
       <LabelItem>
         <Circle primaryColor={primaryColor} />
         <div>{title}</div>
@@ -53,8 +37,8 @@ const LabelElement = ({ title }: Props) => {
 
 export default LabelElement;
 
-const LabelElementSection = styled.section<ILabelElementSection>`
-  background-color: ${(props) => props.primaryBackColor};
+const LabelElementSection = styled.section<IPromaryColor>`
+  background-color: ${(props) => `${transparentize(0.8, props.primaryColor)}`};
   font-size: 12px;
   border-radius: 8px;
   height: 27px;
@@ -70,7 +54,7 @@ const LabelItem = styled.div`
   }
 `;
 
-const Circle = styled.div<ICircle>`
+const Circle = styled.div<IPromaryColor>`
   width: 13px;
   height: 13px;
   border-radius: 50%;
