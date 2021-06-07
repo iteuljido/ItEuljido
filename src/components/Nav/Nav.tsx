@@ -19,7 +19,7 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
             type="text"
             value={search}
             onChange={onChangeSearch}
-            placeholder="이름으로 검색"
+            placeholder="회사 이름으로 검색"
           />
         </SearchWrapper>
         {children}

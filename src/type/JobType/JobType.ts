@@ -1,1 +1,10 @@
-export type JobType = "design" | "front-end" | "back-end";
+export type JobType =
+  | "FrontEnd"
+  | "BackEnd"
+  | "Android"
+  | "iOS"
+  | "Window"
+  | "Design"
+  | "QA"
+  | "CTO"
+  | "CEO";

@@ -1,8 +1,8 @@
 import useCoords from "hook/coords/coords";
-import React, { memo } from "react";
+import { memo } from "react";
 import NavElement from "./NavElement";
 
-const NavElemnetItem = ({ data, index, userSelector }: any) => {
+const NavElemnetItem = memo(({ data, index, userSelector }: any) => {
   const {
     name,
     explanation,
@@ -29,6 +29,6 @@ const NavElemnetItem = ({ data, index, userSelector }: any) => {
       tagImg={tagImgExist}
     />
   );
-};
+});
 
 export default NavElemnetItem;
