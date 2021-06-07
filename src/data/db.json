@@ -1,62 +1,12 @@
 [
   {
     "name": "권순관",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
     "explanation": "일단 설명 쓰자",
+    "tagImg": "",
     "companyName": "대구소프트웨어고등학교",
     "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
-    "tagImg": "",
-    "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
-    "type": "front-end",
-    "generation": 4
-  },
-  {
-    "name": "학교입니다",
-    "explanation": "일단 설명 쓰자",
-    "companyName": "대구소프트웨어고등학교",
-    "companyLocation": "대구광역시 달성군 구지면 창리로11길 93",
-    "tagImg": "",
-    "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
-    "type": "front-end",
-    "generation": 4
-  },
-  {
-    "name": "최진우",
-    "explanation": "만나면 고기 사준다",
-    "companyName": "class101",
-    "companyLocation": "서울 중구 통일로 10 연세재단세브란스빌딩",
-    "tagImg": "https://lh3.googleusercontent.com/proxy/E1smfToKPRKHjW7cZimpm-QbFUi5xaT7h0ryBpsjdO9MdaalpXQDIbdEVvjf8730mm3cFioTCnLNcYPtgqGbbjUN-ixxv1SJpS_I_PakiaZsSUyZLQtLJBVCJYwMpRuhi2D4vc0rfiCBZeORsjJDRltw",
-    "profileImg": "https://avatars.githubusercontent.com/u/49791336?v=4",
-    "type": "back-end",
-    "generation": 4
-  },
-  {
-    "name": "최진우1",
-    "explanation": "만나면 고기 사준다",
-    "companyName": "class101",
-    "companyLocation": "서울 중구 통일로 10 연세재단세브란스빌딩",
-    "tagImg": "https://lh3.googleusercontent.com/proxy/E1smfToKPRKHjW7cZimpm-QbFUi5xaT7h0ryBpsjdO9MdaalpXQDIbdEVvjf8730mm3cFioTCnLNcYPtgqGbbjUN-ixxv1SJpS_I_PakiaZsSUyZLQtLJBVCJYwMpRuhi2D4vc0rfiCBZeORsjJDRltw",
-    "profileImg": "https://avatars.githubusercontent.com/u/49791336?v=4",
-    "type": "back-end",
-    "generation": 4
-  },
-  {
-    "name": "최진우2",
-    "explanation": "만나면 고기 사준다",
-    "companyName": "class101",
-    "companyLocation": "서울 중구 통일로 10 연세재단세브란스빌딩",
-    "tagImg": "https://lh3.googleusercontent.com/proxy/E1smfToKPRKHjW7cZimpm-QbFUi5xaT7h0ryBpsjdO9MdaalpXQDIbdEVvjf8730mm3cFioTCnLNcYPtgqGbbjUN-ixxv1SJpS_I_PakiaZsSUyZLQtLJBVCJYwMpRuhi2D4vc0rfiCBZeORsjJDRltw",
-    "profileImg": "https://avatars.githubusercontent.com/u/49791336?v=4",
-    "type": "back-end",
-    "generation": 4
-  },
-  {
-    "name": "디자인",
-    "explanation": "디자이너",
-    "companyName": "dribble",
-    "companyLocation": "경기도 성남시 분당구 삼평동 627",
-    "tagImg": "",
-    "profileImg": "https://cdn.pixabay.com/photo/2018/05/08/21/28/dribbble-3384011_960_720.png",
-    "type": "design",
-    "generation": 4
+    "position": "FrontEnd"
   }
 ]
