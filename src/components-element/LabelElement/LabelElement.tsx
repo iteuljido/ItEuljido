@@ -15,11 +15,19 @@ const LabelElement = ({ title }: Props) => {
   const primaryColor = useMemo(() => {
     switch (title) {
       case "Design":
-        return "#ea433e";
+        return "#c6538c";
       case "FrontEnd":
-        return "#50f2e0";
+        return "#41b883";
       case "BackEnd":
-        return "#3b21d4";
+        return "#2b7489";
+      case "Android":
+        return "#A97BFF";
+      case "iOS":
+        return "#ffac45";
+      case "CTO":
+        return "#26abd7";
+      case "CEO":
+        return "#c5c9e5";
       default:
         return "black";
     }
