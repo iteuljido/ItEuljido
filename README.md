@@ -38,12 +38,12 @@
   "companyName": "회사 이름 (필수, string)",
   "companyLocation": "회사 주소(필수 - 도로명 주소, string)",
   "position": "직무 (필수 - 하단의 position-type을 보고 작성해주세요. ,string)"
-}
+
 ```
 
 ## position-type
 
-> 혹시 다른 직군 추가를 원하시면 [이슈](https://github.com/SoonGwan/UH-NAGA/issues/new)를 남겨주세요!
+> 혹시 다른 직군 추가를 원하시면 [이슈](https://github.com/SoonGwan/daesogoMap/issues/new)를 남겨주세요!
 
 ```typescript
   | "FrontEnd"
