@@ -17,13 +17,19 @@ const LabelElement = ({ title }: Props) => {
       case "Design":
         return "#c6538c";
       case "FrontEnd":
-        return "#41b883";
-      case "BackEnd":
         return "#2b7489";
+      case "BackEnd":
+        return "#b07219";
       case "Android":
         return "#A97BFF";
+      case "Window":
+        return "#178600";
+      case "Embedded":
+        return "#555555";
       case "iOS":
         return "#ffac45";
+      case "QA":
+        return "#f34b7d";
       case "CTO":
         return "#26abd7";
       case "CEO":

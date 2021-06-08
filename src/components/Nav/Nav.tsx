@@ -1,13 +1,10 @@
+import { ChangeEvent } from "react";
 import styled from "styled-components";
-/**
- * TODO: 상단에 검색바 / 다음에 element 요소들
- * @returns
- */
 
 type Props = {
   children: JSX.Element[];
-  search: any;
-  onChangeSearch: any;
+  search: string;
+  onChangeSearch: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 const Nav = ({ children, search, onChangeSearch }: Props) => {
@@ -22,6 +19,15 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
             placeholder="회사 이름으로 검색"
           />
         </SearchWrapper>
+        <ClickLink>
+          <a
+            href="https://github.com/SoonGwan/daesogoMap/blob/master/README.md"
+            target="_blank"
+            rel="noreferrer"
+          >
+            지금 나를 등록하세요!
+          </a>
+        </ClickLink>
         {children}
       </NavSection>
     </>
@@ -35,14 +41,23 @@ const NavSection = styled.div`
   min-width: 300px;
   max-width: 300px;
   z-index: 9999;
-  /* width: 300px; */
-  /* background-color: #cacaca; */
   height: 100vh;
   overflow: auto;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
 `;
 
 const SearchWrapper = styled.div`
+  width: 100%;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 `;
 
 const SearchInput = styled.input`
@@ -55,5 +70,15 @@ const SearchInput = styled.input`
 
   &:focus {
     outline: none;
+  }
+`;
+
+const ClickLink = styled.div`
+  font-size: 13px;
+  color: gray;
+  padding: 0px 0px 10px 10px;
+
+  & > a {
+    color: #0068c3;
   }
 `;

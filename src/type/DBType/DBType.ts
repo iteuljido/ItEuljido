@@ -8,5 +8,5 @@ export type DBType = {
   profileImg: string;
   generation: number;
   tagImg: string;
-  position: JobType;
+  position: JobType | string;
 };
