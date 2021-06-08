@@ -114,7 +114,7 @@ const CloseNavWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  height: 40px;
 
   & > * {
     transition: all 0.25s ease;
@@ -145,6 +145,15 @@ const SelectedItem = styled.div`
   z-index: 100;
   box-shadow: 16px 0px 20px rgba(0, 0, 0, 10%);
   padding: 10px;
+  overflow: auto;
+
+  @media screen and (max-width: 500px) {
+    max-width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 300px;
+    z-index: 9999;
+  }
 `;
 
 const UserInfoSection = styled.section`
