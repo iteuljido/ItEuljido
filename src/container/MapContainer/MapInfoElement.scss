@@ -7,17 +7,13 @@
   display: flex;
   border-radius: 25px;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   background-color: #0068c3;
   color: #fff;
   font-weight: bold;
   position: relative;
-  /* top: -65px; */
   box-shadow: 10px 0px 40px rgb(0 0 0 / 20%);
   font-size: 15px;
-
-  & > * + * {
-  }
 }
 
 .contentItem {
