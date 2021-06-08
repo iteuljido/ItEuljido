@@ -183,7 +183,7 @@ const UserName = styled.div`
 `;
 
 const TagImg = styled.img`
-  width: 40px;
+  width: 27px;
   vertical-align: bottom;
 `;
 
