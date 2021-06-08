@@ -35,6 +35,7 @@ const NavContainer = () => {
     (coords) => {
       MapSingleton.getInstance().map.setCenter(coords);
       MapSingleton.getInstance().map.setLevel(3);
+
       selectEelement(coords);
     },
     [selectEelement]
@@ -69,7 +70,7 @@ const NavContainer = () => {
               const {
                 name,
                 position,
-                // generation,
+                generation,
                 profileImg,
                 tagImg,
                 explanation,
@@ -81,6 +82,7 @@ const NavContainer = () => {
                   <UserInfoSection>
                     <UserInfoWrapper>
                       <UserNameWrapper>
+                        <Generation>{generation}기</Generation>
                         <UserName>{name}</UserName>
                         {tagImg === "" ? null : (
                           <div>
@@ -184,6 +186,12 @@ const TagImg = styled.img`
   width: 40px;
   vertical-align: bottom;
 `;
+
 const UserDescription = styled.div`
   font-size: 12px;
+`;
+
+const Generation = styled.div`
+  font-size: 14px;
+  color: #cccbcb;
 `;
