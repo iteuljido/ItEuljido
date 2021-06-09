@@ -208,4 +208,14 @@
     "companyLocation": "부산 부산진구 서전로 8",
     "position": "BackEnd"
   },
+  {
+    "name": "서정민",
+    "generation": 1,
+    "profileImg": "",
+    "explanation": "응애",
+    "tagImg": "",
+    "companyName": "(주)위주",
+    "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
+    "position": "FrontEnd"
+  }
 ]
