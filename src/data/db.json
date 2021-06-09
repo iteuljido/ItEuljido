@@ -158,5 +158,44 @@
     "companyName": "매쓰팡",
     "companyLocation": "서울 관악구 관악로 168 대우디오슈페리움2단지",
     "position": "FrontEnd"
+  },
+  {
+    "name": "배재범",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/28669055?v=4",
+    "explanation": "돈 빨리벌고 놀고 먹자",
+    "companyName": "(주)우경정보기술",
+    "companyLocation": "대구광역시 수성구 알파시티1로31길 24-5",
+    "position": "Android"
+  },
+  {
+    "name": "이지영",
+    "generation": "1",
+    "profileImg": "",
+    "tagImg": "",
+    "explanation": "멘탈 강화에 도움이 되는 회사",
+    "companyName": "(주)솔루더스",
+    "companyLocation": "경기도 용인시 수지구 신수로 767 A동 520호",
+    "position": "Window"
+  },
+  {
+    "name": "김학노",
+    "generation": 1,
+    "profileImg": "",
+    "explanation": "곧 귀경해요!",
+    "tagImg": "",
+    "companyName": "클루피(주)",
+    "companyLocation": "부산 부산진구 서전로 8",
+    "position": "Android"
+  },
+  {
+    "name": "김도준",
+    "generation": 1,
+    "profileImg": "https://t1.daumcdn.net/liveboard/petzzi/324489786cca4d6b852e009dfa755cd9.jpg",
+    "explanation": "강아지풀때기",
+    "tagImg": "",
+    "companyName": "(주)나루스튜디오",
+    "companyLocation": "대구 동구 동대구로489, 1200호",
+    "position": "Game"
   }
 ]
