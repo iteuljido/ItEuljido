@@ -28,5 +28,15 @@
     "companyName": "자이닉스",
     "companyLocation": "서울 구로구 디지털로31길 53 1101호",
     "position": "Window"
+  },
+  {
+    "name": "김영재",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/50559538?v=4",
+    "explanation": "😄",
+    "tagImg": "",
+    "companyName": "마미톡",
+    "companyLocation": "서울 강남구 삼성1동 봉은사로86길 6 (602호)",
+    "position": "Android"
   }
 ]
