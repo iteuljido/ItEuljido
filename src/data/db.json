@@ -98,5 +98,15 @@
     "companyName": "드라마앤컴퍼니",
     "companyLocation": "서울특별시 강남구 테헤란로79길 6 제이에스타워",
     "position": "Android"
+  },
+  {
+    "name": "이용재",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/56459713?v=4",
+    "explanation": "후후 불면은 구멍이 생기는 커다란 솜사탕",
+    "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
+    "companyName": "CRS큐브",
+    "companyLocation": "서울 마포구 월드컵북로 396",
+    "position": "Android"
   }
 ]
