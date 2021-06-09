@@ -217,5 +217,15 @@
     "companyName": "(주)위주",
     "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
     "position": "FrontEnd"
+  },
+  {
+    "name": "이지영",
+    "generation": "1",
+    "profileImg": "",
+    "tagImg": "",
+    "explanation": "멘탈 강화에 도움이 되는 회사",
+    "companyName": "(주)솔루더스",
+    "companyLocation": "경기도 용인시 수지구 신수로 767 A동 520호",
+    "position": "Window"
   }
 ]
