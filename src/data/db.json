@@ -14,7 +14,7 @@
     "generation": 4,
     "profileImg": "https://user-images.githubusercontent.com/51149996/107341696-a490ed00-6b02-11eb-9c24-507987f1cb4f.png",
     "explanation": "👋",
-    "tagImg": "https://besuccess.com/wp-content/uploads/2018/07/Wanted-logo.jpg",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121277294-4555b480-c90b-11eb-9483-59198cf4c3f6.png",
     "companyName": "원티드랩",
     "companyLocation": "서울 송파구 올림픽로300, 35층",
     "position": "FrontEnd"
@@ -24,7 +24,7 @@
     "generation": 2,
     "profileImg": "https://avatars.githubusercontent.com/u/30197829?v=4",
     "explanation": "코드싸개",
-    "tagImg": "https://user-images.githubusercontent.com/48983361/121272413-e3904d00-c900-11eb-9908-d53ea12c9cdc.png",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121277542-c90fa100-c90b-11eb-994e-aae4d7d4a8a9.png",
     "companyName": "자이닉스",
     "companyLocation": "서울 구로구 디지털로31길 53 1101호",
     "position": "Window"
@@ -42,9 +42,9 @@
   {
     "name": "이규락",
     "generation": 4,
-    "profileImg": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6266e71a-5e05-4db2-8f26-02e7e59b7940/33474173-41ED-4B63-B953-61F76EC10BA2.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210609%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210609T004424Z&X-Amz-Expires=86400&X-Amz-Signature=206227638113287e49d4f15cad4721a5d2ab0a903879a7c87b76e87bfc4dbdc3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%2233474173-41ED-4B63-B953-61F76EC10BA2.jpeg%22",
+    "profileImg": "https://avatars.githubusercontent.com/u/62545703?v=4",
     "explanation": "장고 할 사람",
-    "tagImg": "",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121277662-0d02a600-c90c-11eb-80de-a0462c4d173f.png",
     "companyName": "퀄슨",
     "companyLocation": "서울 강남구 테헤란로 509 NC타워 10층",
     "position": "Backend"
@@ -54,10 +54,29 @@
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/54434010?v=4",
     "explanation": "안드 꿀잼",
-    "tagImg": "https://platum.kr/wp-content/uploads/2018/06/unnamed-11.jpg",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121279308-53a5cf80-c90f-11eb-96a5-03daec516bd4.png",
     "companyName": "매스프레소",
-    "companyLocation": "주소: 서울특별시 강남구 대치4동 선릉로 428 17층
-",
+    "companyLocation": "서울특별시 강남구 대치4동 선릉로 428 17층",
     "position": "Android"
+  },
+  {
+    "name": "제정민",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52072077?v=4",
+    "explanation": "플로 많이 사용해 주세요 ^^",
+    "tagImg": "https://www.music-flo.com/og_default_190911.png",
+    "companyName": "드림어스컴퍼니",
+    "companyLocation": "서울특별시 서초구 강남대로 311 드림플러스 (15F)",
+    "position": "BackEnd"
+  },
+  {
+    "name": "김대용",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/23008698?v=4",
+    "explanation": "이리저리 떠돌아 다니다가 이제는 서버를 해볼까 합니다.",
+    "tagImg": "",
+    "companyName": "(주)페르소나",
+    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
+    "position": "BackEnd"
   }
 ]
