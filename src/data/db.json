@@ -67,5 +67,13 @@
     "companyName": "(주)위주",
     "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
     "position": "iOS"
+  },
+  {
+    "name": "배재범",
+    "generation": 1,
+    "explanation": "돈 빨리벌고 놀고 먹자",
+    "companyName": "(주)우경정보기술",
+    "companyLocation": "대구광역시 수성구 알파시티1로31길 24-5",
+    "position": "Android"
   }
 ]
