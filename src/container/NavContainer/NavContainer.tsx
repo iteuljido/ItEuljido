@@ -84,9 +84,7 @@ const NavContainer = () => {
                         <Generation>{generation}기</Generation>
                         <UserName>{name}</UserName>
                         {tagImg === "" ? null : (
-                          <div>
-                            <TagImg src={tagImg} alt="" />
-                          </div>
+                          <div>{/* <TagImg src={tagImg} alt="" /> */}</div>
                         )}
                       </UserNameWrapper>
                       <LabelElement title={position} />
