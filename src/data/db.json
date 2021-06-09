@@ -140,13 +140,23 @@
     "position": "Android"
   },
   {
-  "name": "정성훈",
-  "generation": 4,
-  "profileImg": "https://avatars.githubusercontent.com/u/52942411?v=4",
-  "explanation": "오늘 뭐했더라😅",
-  "tagImg": "https://pds.saramin.co.kr/company/logo/202101/29/qnos1z_oux0-1p55ydf_logo.png",
-  "companyName": "매쓰팡",
-  "companyLocation": "서울 관악구 관악로 168 대우디오슈페리움2단지",
-  "position": "FrontEnd"
-}
+    "name": "신민수",
+    "generation": 3,
+    "profileImg": "https://avatars.githubusercontent.com/u/39144276?v=4",
+    "explanation": "S",
+    "tagImg": "",
+    "companyName": "비스키트",
+    "companyLocation": "서울 금천구 벚꽃로 298 1407호",
+    "position": "FrontEnd"
+  },
+  {
+    "name": "정성훈",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52942411?v=4",
+    "explanation": "오늘 뭐했더라😅",
+    "tagImg": "https://pds.saramin.co.kr/company/logo/202101/29/qnos1z_oux0-1p55ydf_logo.png",
+    "companyName": "매쓰팡",
+    "companyLocation": "서울 관악구 관악로 168 대우디오슈페리움2단지",
+    "position": "FrontEnd"
+  }
 ]
