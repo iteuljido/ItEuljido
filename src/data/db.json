@@ -68,5 +68,15 @@
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "BackEnd"
+  },
+   {
+    "name": "최석준",
+    "generation": 3,
+    "profileImg": "https://avatars.githubusercontent.com/u/40194709?v=4",
+    "explanation": "⚰️",
+    "tagImg": "",
+    "companyName": "차케어",
+    "companyLocation": "서울특별시 성동구 왕십리로 83-21 아크로서울포레스트 5층 주식회사 차케어",
+    "position": "FrontEnd"
   }
 ]
