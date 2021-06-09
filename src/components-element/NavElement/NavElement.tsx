@@ -39,7 +39,12 @@ const NavElement = ({
       }}
       isSelectedItem={isSelectedItem}
     >
-      <CompanyName>{companyName}</CompanyName>
+      <ComapnyViewWrapper>
+        <CompanyName>
+          {companyName}
+          <ComapnyTagImg src={tagImg} alt="" />
+        </CompanyName>
+      </ComapnyViewWrapper>
       <CompanyLocation>{companyLocation}</CompanyLocation>
       <WorkingMemberWrapper>
         <AiOutlineUser />
@@ -68,11 +73,23 @@ const NavElementSection = styled.section<INavElementSection>`
   }
 `;
 
+const ComapnyViewWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const CompanyName = styled.div`
   font-size: 18px;
   color: #0068c3;
   font-weight: 700;
   letter-spacing: -1px;
+  display: flex;
+`;
+
+const ComapnyTagImg = styled.img`
+  height: 31px;
+  margin-left: 5px;
+  z-index: 1;
 `;
 
 const CompanyLocation = styled.div`
