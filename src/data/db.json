@@ -80,6 +80,16 @@
     "position": "BackEnd"
   },
   {
+    "name": "조민서",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/49663640?s=60&v=4",
+    "explanation": "무매몽지..무지몽매..모두 무야호..",
+    "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
+    "companyName": "CRScube",
+    "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
+    "position": "Android"
+  },
+  {
     "name": "남규석",
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/52943549?v=4",
@@ -106,7 +116,7 @@
     "explanation": "후후 불면은 구멍이 생기는 커다란 솜사탕",
     "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
     "companyName": "CRS큐브",
-    "companyLocation": "서울 마포구 월드컵북로 396",
+    "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층,
     "position": "Android"
   }
 ]
