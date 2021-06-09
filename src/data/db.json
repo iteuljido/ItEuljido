@@ -197,5 +197,15 @@
     "companyName": "(주)나루스튜디오",
     "companyLocation": "대구 동구 동대구로489, 1200호",
     "position": "Game"
-  }
+  },
+  {
+    "name": "정동혁",
+    "generation": 1,
+    "profileImg": "https://scontent-gmp1-1.xx.fbcdn.net/v/t1.6435-1/p200x200/151574155_1517143028676971_6778545627394662510_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=7206a8&_nc_ohc=G8jxIXMYjBEAX-ntBYj&_nc_ht=scontent-gmp1-1.xx&tp=6&oh=7ec431aec9713868dac11f0922b25915&oe=60E48954",
+    "explanation": "부산서면 전세6000 관리비10 중도세입자 구함",
+    "tagImg": "",
+    "companyName": "클루피(주)",
+    "companyLocation": "부산 부산진구 서전로 8",
+    "position": "BackEnd"
+  },
 ]
