@@ -128,5 +128,15 @@
     "companyName": "(주)위주",
     "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
     "position": "iOS"
+  }.
+  {
+    "name": "김종우",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/55072002?s=400&u=8f6161fbe08d279defa5bb2b43742dd4a1dd07d2&v=4",
+    "explanation": "🤗",
+    "tagImg": "https://post-phinf.pstatic.net/MjAyMDEyMDNfMjQ4/MDAxNjA2OTc0MzkyMzA1.7trbdN-3zZO_DQ9qCyPtBzgP3R8fGbSXHUb_YiOe324g.r28JBfW74lgXncLw2bV6MAY0X9753PLr7pmW3Kegtqkg.PNG/%EC%A7%84%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0_%EC%95%84%EC%9D%B4%EC%97%A0_%EB%A1%9C%EA%B3%A0.png?type=w1200",
+    "companyName": "진모빌리티",
+    "companyLocation": "서울 강남구 테헤란로26길 14",
+    "position": "Android"
   }
 ]
