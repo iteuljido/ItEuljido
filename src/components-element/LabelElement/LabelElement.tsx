@@ -32,6 +32,8 @@ const LabelElement = ({ title }: Props) => {
         return "#705199";
       case "Game":
         return "#f34b7d";
+      case "Planner":
+        return "#C35817";
       case "CTO":
         return "#26abd7";
       case "CEO":

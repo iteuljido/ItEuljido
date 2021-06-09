@@ -56,6 +56,7 @@
   | "Design"
   | "QA"
   | "Game"
+  | "Planner"
   | "CTO"
   | "CEO"
 ```
