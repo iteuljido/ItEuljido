@@ -48,5 +48,16 @@
     "companyName": "퀄슨",
     "companyLocation": "서울 강남구 테헤란로 509 NC타워 10층",
     "position": "Backend"
+  },
+  {
+    "name": "이문영",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/54434010?v=4",
+    "explanation": "안드 꿀잼",
+    "tagImg": "https://platum.kr/wp-content/uploads/2018/06/unnamed-11.jpg",
+    "companyName": "매스프레소",
+    "companyLocation": "주소: 서울특별시 강남구 대치4동 선릉로 428 17층
+",
+    "position": "Android"
   }
 ]
