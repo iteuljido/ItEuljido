@@ -68,5 +68,15 @@
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "BackEnd"
-  }
+  },
+  {
+    "name": "조민서",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/49663640?s=60&v=4",
+    "explanation": "무매몽지..무지몽매..모두 무야호..",
+    "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
+    "companyName": "CRScube",
+    "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
+    "position": "Android"
+  },
 ]
