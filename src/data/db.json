@@ -76,5 +76,15 @@
     "companyName": "(주)솔루더스",
     "companyLocation": "경기도 용인시 수지구 신수로 767 A동 520호",
     "position": "Window"
+  },
+  {
+    "name": "김학노”,
+    "generation": 1,
+    "profileImg": "",
+    "explanation": "곧 귀경해요!",
+    "tagImg": "",
+    "companyName": "클루피(주)",
+    "companyLocation": "부산 부산진구 서전로 8",
+    "position": "Android"
   }
 ]
