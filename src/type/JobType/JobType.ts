@@ -6,5 +6,7 @@ export type JobType =
   | "Window"
   | "Design"
   | "QA"
+  | "Game"
+  | "Planner"
   | "CTO"
   | "CEO";

@@ -97,6 +97,15 @@ export class MapSingleton {
           overlay.setMap(null);
         });
 
+        kakao.maps.event.addListener(this.map, "zoom_changed", () => {
+          let level = this.map.getLevel();
+          if (level < 5) {
+            overlay.setMap(this.map);
+          } else {
+            overlay.setMap(null);
+          }
+        });
+
         overlay.setMap(null);
       });
     }
@@ -141,6 +150,15 @@ export class MapSingleton {
 
       kakao.maps.event.addListener(this.map, "click", () => {
         overlay.setMap(null);
+      });
+
+      kakao.maps.event.addListener(this.map, "zoom_changed", () => {
+        let level = this.map.getLevel();
+        if (level < 6) {
+          overlay.setMap(this.map);
+        } else {
+          overlay.setMap(null);
+        }
       });
 
       overlay.setMap(null);
