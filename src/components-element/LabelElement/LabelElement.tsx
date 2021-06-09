@@ -29,6 +29,8 @@ const LabelElement = ({ title }: Props) => {
       case "iOS":
         return "#ffac45";
       case "QA":
+        return "#705199";
+      case "Game":
         return "#f34b7d";
       case "CTO":
         return "#26abd7";
