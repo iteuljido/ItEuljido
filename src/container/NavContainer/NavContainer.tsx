@@ -34,8 +34,7 @@ const NavContainer = () => {
   const userSelector = useCallback(
     (coords) => {
       MapSingleton.getInstance().map.setCenter(coords);
-      MapSingleton.getInstance().map.setLevel(3);
-
+      MapSingleton.getInstance().map.setLevel(4);
       selectEelement(coords);
     },
     [selectEelement]
