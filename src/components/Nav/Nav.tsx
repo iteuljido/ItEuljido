@@ -58,6 +58,7 @@ const SearchWrapper = styled.div`
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 10;
 `;
 
 const SearchInput = styled.input`
