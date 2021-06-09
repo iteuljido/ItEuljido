@@ -42,11 +42,11 @@
   {
     "name": "이규락",
     "generation": 4,
-    "profileImg": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6266e71a-5e05-4db2-8f26-02e7e59b7940/33474173-41ED-4B63-B953-61F76EC10BA2.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210609%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210609T004424Z&X-Amz-Expires=86400&X-Amz-Signature=206227638113287e49d4f15cad4721a5d2ab0a903879a7c87b76e87bfc4dbdc3&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%2233474173-41ED-4B63-B953-61F76EC10BA2.jpeg%22",
+    "profileImg": "https://avatars.githubusercontent.com/u/62545703?v=4",
     "explanation": "장고 할 사람",
-    "tagImg": "",
+    "tagImg": "https://static.wanted.co.kr/images/wdes/0_4_ca1ebc16-32b8-4249-a0a5-66b029de4e8b.jpg",
     "companyName": "퀄슨",
     "companyLocation": "서울 강남구 테헤란로 509 NC타워 10층",
-    "position": "Backend"
+    "position": "BackEnd"
   }
 ]
