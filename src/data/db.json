@@ -88,5 +88,15 @@
     "companyName": "진모빌리티",
     "companyLocation": "서울 강남구 테헤란로26길 14",
     "position": "iOS"
+  },
+  {
+    "name": "박진",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/50200481?v=4",
+    "explanation": "리멤버",
+    "tagImg": "https://s3-ap-northeast-1.amazonaws.com/dramancompany.com/static/images/header-top-black-logo.png",
+    "companyName": "드라마앤컴퍼니",
+    "companyLocation": "서울특별시 강남구 테헤란로79길 6 제이에스타워",
+    "position": "Android"
   }
 ]
