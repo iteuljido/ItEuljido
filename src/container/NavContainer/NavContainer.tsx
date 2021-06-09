@@ -66,15 +66,8 @@ const NavContainer = () => {
           {company
             .filter((args) => args.companyName === selectedNavCompanyName)
             .map((data, index) => {
-              const {
-                name,
-                position,
-                generation,
-                profileImg,
-                tagImg,
-                explanation,
-                // companyName,
-              } = data;
+              const { name, position, generation, profileImg, explanation } =
+                data;
               return (
                 <UserWrapper key={index}>
                   <UserImg src={profileImg} />
@@ -83,9 +76,6 @@ const NavContainer = () => {
                       <UserNameWrapper>
                         <Generation>{generation}기</Generation>
                         <UserName>{name}</UserName>
-                        {tagImg === "" ? null : (
-                          <div>{/* <TagImg src={tagImg} alt="" /> */}</div>
-                        )}
                       </UserNameWrapper>
                       <LabelElement title={position} />
                     </UserInfoWrapper>
@@ -177,11 +167,6 @@ const UserImg = styled.img`
 const UserName = styled.div`
   font-size: 16px;
   font-weight: bold;
-`;
-
-const TagImg = styled.img`
-  width: 27px;
-  vertical-align: bottom;
 `;
 
 const UserDescription = styled.div`
