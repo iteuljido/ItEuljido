@@ -66,5 +66,15 @@
     "companyName": "(주)우경정보기술",
     "companyLocation": "대구광역시 수성구 알파시티1로31길 24-5",
     "position": "Android"
+  },
+  {
+    "name": "이지영",
+    "generation": "1",
+    "profileImg": "",
+    "tagImg": "",
+    "explanation": "멘탈 강화에 도움이 되는 회사",
+    "companyName": "(주)솔루더스",
+    "companyLocation": "경기도 용인시 수지구 신수로 767 A동 520호",
+    "position": "Window"
   }
 ]
