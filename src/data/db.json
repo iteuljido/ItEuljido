@@ -57,5 +57,15 @@
     "tagImg": "",
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
+  },
+  {
+    "name": "제정민",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52072077?v=4",
+    "explanation": "플로 많이 사용해 주세요 ^^",
+    "tagImg": "https://www.music-flo.com/og_default_190911.png",
+    "companyName": "드림어스컴퍼니",
+    "companyLocation": "서울특별시 서초구 강남대로 311 드림플러스 15F",
+    "position": "BackEnd"
   }
 ]
