@@ -138,5 +138,14 @@
     "companyName": "진모빌리티",
     "companyLocation": "서울 강남구 테헤란로26길 14",
     "position": "Android"
-  }
+  },
+  {
+    "name": "신민수",
+    "generation": 3,
+    "profileImg": "https://avatars.githubusercontent.com/u/39144276?v=4",
+    "explanation": "S",
+    "tagImg": "",
+    "companyName": "비스키트",
+    "companyLocation": "서울 금천구 벚꽃로 298 1407호",
+    "position": "FrontEnd"
 ]
