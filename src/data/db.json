@@ -50,15 +50,6 @@
     "position": "BackEnd"
   },
   {
-    "name": "김대용",
-    "generation": 1,
-    "profileImg": "https://avatars.githubusercontent.com/u/23008698?v=4",
-    "explanation": "이리저리 떠돌아 다니다가 이제는 서버를 해볼까 합니다.",
-    "tagImg": "",
-    "companyName": "(주)페르소나",
-    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
-  },
-  {
     "name": "제정민",
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/52072077?v=4",
@@ -66,6 +57,16 @@
     "tagImg": "https://www.music-flo.com/og_default_190911.png",
     "companyName": "드림어스컴퍼니",
     "companyLocation": "서울특별시 서초구 강남대로 311 드림플러스 15F",
+    "position": "BackEnd"
+  },
+  {
+    "name": "김대용",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/23008698?v=4",
+    "explanation": "이리저리 떠돌아 다니다가 이제는 서버를 해볼까 합니다.",
+    "tagImg": "",
+    "companyName": "(주)페르소나",
+    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "BackEnd"
   }
 ]
