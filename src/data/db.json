@@ -78,5 +78,15 @@
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "BackEnd"
+  },
+  {
+    "name": "남규석",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52943549?v=4",
+    "explanation": "맥북 없는 iOS 개발자",
+    "tagImg": "",
+    "companyName": "진모빌리티",
+    "companyLocation": "서울 강남구 테헤란로26길 14",
+    "position": "iOS"
   }
 ]
