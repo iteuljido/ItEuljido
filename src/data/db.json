@@ -50,11 +50,21 @@
     "position": "BackEnd"
   },
   {
+    "name": "이문영",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/54434010?v=4",
+    "explanation": "안드 꿀잼",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121279308-53a5cf80-c90f-11eb-96a5-03daec516bd4.png",
+    "companyName": "매스프레소",
+    "companyLocation": "서울특별시 강남구 대치4동 선릉로 428 17층",
+    "position": "Android"
+  },
+  {
     "name": "제정민",
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/52072077?v=4",
-    "explanation": "플로 많이 사용해 주세요 ^^",
-    "tagImg": "https://www.music-flo.com/og_default_190911.png",
+    "explanation": "플로 많이 사용해 주세요.",
+    "tagImg": "https://i.pinimg.com/originals/84/b1/a8/84b1a8b555a1bed9f872a0285cab3281.png",
     "companyName": "드림어스컴퍼니",
     "companyLocation": "서울특별시 서초구 강남대로 311 드림플러스 (15F)",
     "position": "BackEnd"
@@ -69,7 +79,7 @@
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "BackEnd"
   },
-   {
+  {
     "name": "최석준",
     "generation": 3,
     "profileImg": "https://avatars.githubusercontent.com/u/40194709?v=4",
@@ -78,5 +88,65 @@
     "companyName": "차케어",
     "companyLocation": "서울특별시 성동구 왕십리로 83-21 아크로서울포레스트 5층 주식회사 차케어",
     "position": "FrontEnd"
+  },
+  {
+    "name": "조민서",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/49663640?s=60&v=4",
+    "explanation": "무매몽지..무지몽매..모두 무야호..",
+    "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
+    "companyName": "CRS큐브",
+    "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
+    "position": "Android"
+  },
+  {
+    "name": "남규석",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52943549?v=4",
+    "explanation": "맥북 없는 iOS 개발자",
+    "tagImg": "https://post-phinf.pstatic.net/MjAyMDEyMDNfMjQ4/MDAxNjA2OTc0MzkyMzA1.7trbdN-3zZO_DQ9qCyPtBzgP3R8fGbSXHUb_YiOe324g.r28JBfW74lgXncLw2bV6MAY0X9753PLr7pmW3Kegtqkg.PNG/%EC%A7%84%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0_%EC%95%84%EC%9D%B4%EC%97%A0_%EB%A1%9C%EA%B3%A0.png?type=w1200",
+    "companyName": "진모빌리티",
+    "companyLocation": "서울 강남구 테헤란로26길 14",
+    "position": "iOS"
+  },
+  {
+    "name": "박진",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/50200481?v=4",
+    "explanation": "리멤버",
+    "tagImg": "https://s3-ap-northeast-1.amazonaws.com/dramancompany.com/static/images/header-top-black-logo.png",
+    "companyName": "드라마앤컴퍼니",
+    "companyLocation": "서울특별시 강남구 테헤란로79길 6 제이에스타워",
+    "position": "Android"
+  },
+  {
+    "name": "이용재",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/56459713?v=4",
+    "explanation": "후후 불면은 구멍이 생기는 커다란 솜사탕",
+    "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
+    "companyName": "CRS큐브",
+    "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
+    "position": "Android"
+  },
+  {
+    "name": "서동혁",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/31297498?v=4",
+    "explanation": "안천재 안노마드 코더",
+    "tagImg": "",
+    "companyName": "(주)위주",
+    "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
+    "position": "iOS"
+  },
+  {
+    "name": "김종우",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/55072002?s=400&u=8f6161fbe08d279defa5bb2b43742dd4a1dd07d2&v=4",
+    "explanation": "🤗",
+    "tagImg": "https://post-phinf.pstatic.net/MjAyMDEyMDNfMjQ4/MDAxNjA2OTc0MzkyMzA1.7trbdN-3zZO_DQ9qCyPtBzgP3R8fGbSXHUb_YiOe324g.r28JBfW74lgXncLw2bV6MAY0X9753PLr7pmW3Kegtqkg.PNG/%EC%A7%84%EB%AA%A8%EB%B9%8C%EB%A6%AC%ED%8B%B0_%EC%95%84%EC%9D%B4%EC%97%A0_%EB%A1%9C%EA%B3%A0.png?type=w1200",
+    "companyName": "진모빌리티",
+    "companyLocation": "서울 강남구 테헤란로26길 14",
+    "position": "Android"
   }
 ]

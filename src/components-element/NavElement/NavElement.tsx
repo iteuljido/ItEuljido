@@ -83,13 +83,19 @@ const CompanyName = styled.div`
   color: #0068c3;
   font-weight: 700;
   letter-spacing: -1px;
-  display: flex;
+  position: relative;
+  /* display: flex; */
 `;
 
 const ComapnyTagImg = styled.img`
-  height: 31px;
+  /* height: 31px; */
   margin-left: 5px;
   z-index: 1;
+  max-width: 50px;
+  max-height: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 `;
 
 const CompanyLocation = styled.div`
