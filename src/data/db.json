@@ -85,7 +85,7 @@
     "profileImg": "https://avatars.githubusercontent.com/u/49663640?s=60&v=4",
     "explanation": "무매몽지..무지몽매..모두 무야호..",
     "tagImg": "https://www.crscube.io/img/crscube-logo@3x.5984d267.png",
-    "companyName": "CRScube",
+    "companyName": "CRS큐브",
     "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
     "position": "Android"
   },
@@ -118,5 +118,15 @@
     "companyName": "CRS큐브",
     "companyLocation": "서울 마포구 월드컵북로 396 (상암동, 누리꿈스퀘어) R&D 타워 8층",
     "position": "Android"
+  },
+  {
+    "name": "서동혁",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/31297498?v=4",
+    "explanation": "안천재 안노마드 코더",
+    "tagImg": "",
+    "companyName": "(주)위주",
+    "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
+    "position": "iOS"
   }
 ]
