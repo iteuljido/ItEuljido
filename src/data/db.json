@@ -86,5 +86,15 @@
     "companyName": "클루피(주)",
     "companyLocation": "부산 부산진구 서전로 8",
     "position": "Android"
+  },
+  {
+    "name": "김도준",
+    "generation": 1,
+    "profileImg": "https://t1.daumcdn.net/liveboard/petzzi/324489786cca4d6b852e009dfa755cd9.jpg",
+    "explanation": "강아지풀때기",
+    "tagImg": "",
+    "companyName": "(주)나루스튜디오",
+    "companyLocation": "",
+    "position": "Unity3D"
   }
 ]
