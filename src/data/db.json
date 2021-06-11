@@ -219,13 +219,13 @@
     "position": "FrontEnd"
   },
   {
-    "name": "이지영",
-    "generation": "1",
+    "name": "홍진택",
+    "generation": 1,
     "profileImg": "",
     "tagImg": "",
-    "explanation": "멘탈 강화에 도움이 되는 회사",
-    "companyName": "(주)솔루더스",
-    "companyLocation": "경기도 용인시 수지구 신수로 767 A동 520호",
-    "position": "Window"
+    "explanation": "아 맞다",
+    "companyName": "(주)사이버다임",
+    "companyLocation": "서울 송파구 올림픽로 299, 12층",
+    "position": "BackEnd"
   }
 ]
