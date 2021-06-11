@@ -217,5 +217,15 @@
     "companyName": "(주)위주",
     "companyLocation": "서울시 금천구 가산디지털 1로 145 에이스하이엔드타워 3차 417호",
     "position": "FrontEnd"
+  },
+  {
+    "name": "홍진택",
+    "generation": 1,
+    "profileImg": "",
+    "tagImg": "",
+    "explanation": "아 맞다",
+    "companyName": "(주)사이버다임",
+    "companyLocation": "서울 송파구 올림픽로 299, 12층",
+    "position": "BackEnd"
   }
 ]
