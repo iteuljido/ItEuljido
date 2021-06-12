@@ -227,5 +227,15 @@
     "companyName": "(주)사이버다임",
     "companyLocation": "서울 송파구 올림픽로 299, 12층",
     "position": "BackEnd"
+  },
+  {
+    "name": "임준혁",
+    "generation": 2,
+    "profileImg": "https://avatars.githubusercontent.com/u/31408848?v=4",
+    "tagImg": "https://avatars.githubusercontent.com/u/24905867?s=200&v=4",
+    "explanation": "부자가 되자",
+    "companyName": "(주)직랩",
+    "companyLocation": "서울 강남구 강남대로112길 32, 4층",
+    "position": "Android"
   }
 ]
