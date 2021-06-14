@@ -28,13 +28,20 @@ const Nav = ({ children, search, onChangeSearch }: Props) => {
             지금 나를 등록하세요!
           </a>
         </ClickLink>
-        {children}
+        <ChildrenWrapper>{children}</ChildrenWrapper>
       </NavSection>
     </>
   );
 };
 
 export default Nav;
+
+const ChildrenWrapper = styled.div`
+  @media screen and (max-width: 500px) {
+    height: calc(40vh - 79px);
+    overflow-y: auto;
+  }
+`;
 
 const NavSection = styled.div`
   box-sizing: border-box;
@@ -46,9 +53,9 @@ const NavSection = styled.div`
 
   @media screen and (max-width: 500px) {
     width: 100%;
-    height: 100%;
     min-width: 100%;
     max-width: 100%;
+    height: 100%;
   }
 `;
 

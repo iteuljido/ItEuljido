@@ -137,11 +137,13 @@ const SelectedItem = styled.div`
   overflow: auto;
 
   @media screen and (max-width: 500px) {
+    border-radius: 10px 10px 0px 0px;
     max-width: 100%;
     left: 0px;
     bottom: 0px;
-    height: 300px;
+    height: 250px;
     z-index: 9999;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 20%);
   }
 `;
 
