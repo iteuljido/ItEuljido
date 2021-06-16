@@ -247,5 +247,15 @@
     "companyName": "29cm",
     "companyLocation": "서울특별시 강남구 선릉로93길 35 나라키움 역삼B빌딩 4층 29CM",
     "position": "FrontEnd"
+  },
+  {
+    "name": "한승재",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/51234550?v=4",
+    "tagImg": "https://www.startupn.kr/news/photo/202008/5842_6079_1955.jpg",
+    "explanation": "부르릉",
+    "companyName": "(주)스파이더크래프트",
+    "companyLocation": "서울 강남구 논현로131길 20 스파이더센터",
+    "position": "Android"
   }
 ]
