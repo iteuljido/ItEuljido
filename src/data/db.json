@@ -237,5 +237,15 @@
     "companyName": "(주)직랩",
     "companyLocation": "서울 강남구 강남대로112길 32, 4층",
     "position": "Android"
+  },
+  {
+    "name": "한승재",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/51234550?v=4",
+    "tagImg": "https://www.startupn.kr/news/photo/202008/5842_6079_1955.jpg",
+    "explanation": "부르릉",
+    "companyName": "(주)스파이더크래프트",
+    "companyLocation": "서울 강남구 논현로131길 20 스파이더센터",
+    "position": "Android"
   }
 ]
