@@ -237,5 +237,15 @@
     "companyName": "(주)직랩",
     "companyLocation": "서울 강남구 강남대로112길 32, 4층",
     "position": "Android"
+  },
+  {
+    "name": "서진혁",
+    "generation": 2,
+    "profileImg": "https://avatars.githubusercontent.com/u/30362922?v=4",
+    "tagImg": "https://user-images.githubusercontent.com/30362922/122179924-ec65bd80-cec2-11eb-8af0-6bd00fa0e4ad.png",
+    "explanation": "29cm 할인쿠폰 필요하면 연락",
+    "companyName": "29cm",
+    "companyLocation": "서울특별시 강남구 선릉로93길 35 나라키움 역삼B빌딩 4층 29CM",
+    "position": "FrontEnd"
   }
 ]
