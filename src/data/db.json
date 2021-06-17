@@ -70,6 +70,16 @@
     "position": "BackEnd"
   },
   {
+    "name": "Chris Kim",
+    "generation": "",
+    "profileImg": "https://mvp.microsoft.com/ko-kr/PublicProfile/Photo/5000536",
+    "explanation": "",
+    "tagImg": "",
+    "companyName": "(주)페르소나",
+    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
+    "position": "CTO"
+  },
+  {
     "name": "최석준",
     "generation": 3,
     "profileImg": "https://avatars.githubusercontent.com/u/40194709?v=4",
@@ -258,7 +268,7 @@
     "companyLocation": "서울 강남구 논현로131길 20 스파이더센터",
     "position": "Android"
   },
-   {
+  {
     "name": "양동현",
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/66651059?s=400&u=8816833b8720ed65d43b056e56eaded7db4c590c&v=4",
