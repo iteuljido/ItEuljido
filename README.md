@@ -54,6 +54,7 @@
   | "Window"
   | "Embedded"
   | "Design"
+  | "AI"
   | "QA"
   | "Game"
   | "Planner"

@@ -5,6 +5,7 @@ export type JobType =
   | "iOS"
   | "Window"
   | "Design"
+  | "AI"
   | "QA"
   | "Game"
   | "Planner"
