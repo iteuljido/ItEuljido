@@ -11,7 +11,7 @@ import { IoMdClose } from "react-icons/io";
 import _ from "lodash";
 import styled from "styled-components";
 import LabelElement from "components-element/LabelElement/LabelElement";
-
+import DefaultProfileImg from "assets/defaultProfile.jpeg";
 declare global {
   interface Window {
     kakao: any;
@@ -68,14 +68,19 @@ const NavContainer = () => {
             .map((data, index) => {
               const { name, position, generation, profileImg, explanation } =
                 data;
+              const hasProfile =
+                profileImg !== "" ? profileImg : DefaultProfileImg;
+
               return (
                 <UserWrapper key={index}>
-                  <UserImg src={profileImg} />
+                  <UserImg src={hasProfile} />
                   <UserInfoSection>
                     <UserInfoWrapper>
                       <UserNameWrapper>
-                        <Generation>{generation}기</Generation>
                         <UserName>{name}</UserName>
+                        <Generation>
+                          {generation === "" ? null : generation + "기"}
+                        </Generation>
                       </UserNameWrapper>
                       <LabelElement title={position} />
                     </UserInfoWrapper>
