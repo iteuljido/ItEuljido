@@ -65,6 +65,9 @@ const NavContainer = () => {
           </CloseNavWrapper>
           {company
             .filter((args) => args.companyName === selectedNavCompanyName)
+            .sort((a, b): number => {
+              return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+            })
             .map((data, index) => {
               const { name, position, generation, profileImg, explanation } =
                 data;
