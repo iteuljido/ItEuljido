@@ -45,7 +45,7 @@ const NavContainer = () => {
       <Nav search={search} onChangeSearch={onChangeSearch}>
         {filterUserList.map((data: any, index: number) => (
           <NavElemnetItem
-            key={index}
+            key={data.name}
             data={data}
             index={index}
             userSelector={userSelector}

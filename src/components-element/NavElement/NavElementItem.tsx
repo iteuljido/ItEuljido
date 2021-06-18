@@ -1,8 +1,15 @@
 import useCoords from "hook/coords/coords";
 import { memo } from "react";
+import { DBType } from "type/DBType/DBType";
 import NavElement from "./NavElement";
 
-const NavElemnetItem = memo(({ data, index, userSelector }: any) => {
+type Props = {
+  data: DBType;
+  index: number;
+  userSelector: (coords: string) => void;
+};
+
+const NavElemnetItem = memo(({ data, index, userSelector }: Props) => {
   const {
     name,
     explanation,
@@ -26,7 +33,7 @@ const NavElemnetItem = memo(({ data, index, userSelector }: any) => {
       companyLocation={companyLocation}
       profileImg={profileImg}
       type={type}
-      tagImg={tagImgExist}
+      tagImg={tagImgExist || ""}
     />
   );
 });

@@ -5,8 +5,9 @@ export type DBType = {
   explanation: string;
   companyName: string;
   companyLocation: string;
-  profileImg: string;
+  profileImg: string | null;
   generation: number;
-  tagImg: string;
+  tagImg: string | null;
   position: JobType | string;
+  type?: string;
 };

@@ -5,6 +5,20 @@ import styled from "styled-components";
 import { darken } from "polished";
 import { userAtom } from "atom/user";
 import { AiOutlineUser } from "react-icons/ai";
+import { DBType } from "type/DBType/DBType";
+
+type Props = {
+  name: string;
+  explanation: string;
+  companyName: string;
+  companyLocation: string;
+  profileImg: string | null | undefined;
+  type: string | undefined;
+  coords: string;
+  userSelector: (coords: string) => void;
+  tagImg: string;
+};
+
 interface INavElementSection {
   isSelectedItem: boolean;
 }
@@ -18,8 +32,8 @@ const NavElement = ({
   type,
   coords,
   userSelector,
-  tagImg,
-}: any) => {
+  tagImg = "",
+}: Props) => {
   const selectElement = useRecoilValue(coordsAtom);
   const member = useRecoilValue(userAtom);
   const setNavDeps = useSetRecoilState(navAtom);
