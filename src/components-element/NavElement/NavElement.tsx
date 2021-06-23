@@ -1,11 +1,10 @@
-import { coordsAtom } from "atom/coords";
-import { useRecoilValue, useSetRecoilState } from "recoil";
-import { navAtom, selectComapnyName } from "atom/nav";
-import styled from "styled-components";
-import { darken } from "polished";
-import { userAtom } from "atom/user";
-import { AiOutlineUser } from "react-icons/ai";
-import { DBType } from "type/DBType/DBType";
+import { coordsAtom } from 'atom/coords';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { navAtom, selectComapnyName } from 'atom/nav';
+import styled from 'styled-components';
+import { darken } from 'polished';
+import { userAtom } from 'atom/user';
+import { AiOutlineUser } from 'react-icons/ai';
 
 type Props = {
   name: string;
@@ -32,7 +31,7 @@ const NavElement = ({
   type,
   coords,
   userSelector,
-  tagImg = "",
+  tagImg = '',
 }: Props) => {
   const selectElement = useRecoilValue(coordsAtom);
   const member = useRecoilValue(userAtom);
@@ -56,7 +55,7 @@ const NavElement = ({
       <ComapnyViewWrapper>
         <CompanyName>
           {companyName}
-          <ComapnyTagImg src={tagImg} alt="" />
+          <ComapnyTagImg src={tagImg} alt='' />
         </CompanyName>
       </ComapnyViewWrapper>
       <CompanyLocation>{companyLocation}</CompanyLocation>
@@ -77,13 +76,13 @@ const NavElementSection = styled.section<INavElementSection>`
   cursor: pointer;
   padding: 10px;
   background-color: ${(props) =>
-    props.isSelectedItem ? `${darken(0.05, "#fff")}` : "#fff"};
+    props.isSelectedItem ? `${darken(0.05, '#fff')}` : '#fff'};
 
   &:hover {
     background-color: ${(props) =>
       props.isSelectedItem
-        ? `${darken(0.05, "#fff")}`
-        : `${darken(0.02, "#fff")}`};
+        ? `${darken(0.05, '#fff')}`
+        : `${darken(0.02, '#fff')}`};
   }
 `;
 
