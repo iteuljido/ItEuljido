@@ -277,5 +277,15 @@
     "companyName": "(주)휴먼스케이프",
     "companyLocation": "서울특별시 강남구 봉은사로86길 6, 레베쌍트빌딩 601호",
     "position": "FrontEnd"
+  },
+  {
+    "name": "전인성",
+    "generation": 3,
+    "profileImg": "https://avatars.githubusercontent.com/u/35361568?s=400&u=9cfe9f7ff2e44632b73bf84aef6768b538b2c2b0&v=4",
+    "explanation": "퇴근 마렵다",
+    "tagImg": "http://www.wkit.co.kr/static/wkit/assets/images/main/ft_logo.png",
+    "companyName": "(주)우경정보기술",
+    "companyLocation": "대구광역시 수성구 알파시티1로31길 24-5",
+    "position": "BackEnd"
   }
 ]
