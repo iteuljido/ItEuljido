@@ -267,5 +267,15 @@
     "companyName": "(주)와들",
     "companyLocation": "서울특별시 서초구 양재1동 성촌길 56 C동",
     "position": "Android"
+  },
+  {
+    "name": "남현욱",
+    "generation": 2,
+    "profileImg": "https://ko.gravatar.com/userimage/155719586/0fd6dd66b4b6a6df57ac957e3f9bb308.jpg?size=512",
+    "tagImg": "https://humanscape.io/images/favicon.png",
+    "explanation": "",
+    "companyName": "(주)휴먼스케이프",
+    "companyLocation": "서울특별시 강남구 봉은사로86길 6, 레베쌍트빌딩 601호",
+    "position": "FrontEnd"
   }
 ]
