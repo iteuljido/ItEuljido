@@ -287,5 +287,15 @@
     "companyName": "(주)우경정보기술",
     "companyLocation": "대구광역시 수성구 알파시티1로31길 24-5",
     "position": "BackEnd"
+  },
+  {
+    "name": "이영은",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52942409?v=4",
+    "tagImg": "https://avatars.githubusercontent.com/u/24905867?s=200&v=4",
+    "explanation": "언제나~ 초신선~",
+    "companyName": "(주)직랩",
+    "companyLocation": "서울 강남구 강남대로112길 32, 4층",
+    "position": "iOS"
   }
 ]
