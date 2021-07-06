@@ -297,5 +297,15 @@
     "companyName": "(주)직랩",
     "companyLocation": "서울 강남구 강남대로112길 32, 4층",
     "position": "iOS"
+  },  
+  {
+    "name": "권용빈",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/50941453?s=400&u=10bdb6c24f12472ca11bd2bed34a8ca7a883e015&v=4",
+    "explanation": "누군가를 좋아한다는 사실이 그 사람에게는 상처가 될 수도 있잖아요..",
+    "tagImg": "",
+    "companyName": "(주)페르소나",
+    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
+    "position": "FrontEnd"
   }
 ]
