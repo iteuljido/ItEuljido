@@ -317,5 +317,15 @@
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "FrontEnd"
+  },
+  {
+    "name": "우현진",
+    "generation": 2,
+    "profileImg": "",
+    "explanation": "돈벌고싶어여",
+    "tagImg": "https://cdn.imweb.me/upload/S20210416bccc442510498/84ffa3c0f1638.png",
+    "companyName": "(주)이지식스  (엠블)",
+    "companyLocation": "서울시 강남구 봉은사로26길 32-3",
+    "position": "iOS"
   }
 ]
