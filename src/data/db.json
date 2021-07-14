@@ -327,5 +327,15 @@
     "companyName": "이지식스(엠블)",
     "companyLocation": "서울시 강남구 봉은사로26길 32-3",
     "position": "iOS"
+  },
+  {
+    "name": "강민석",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/51021614?v=4",
+    "explanation": "블라블라~",
+    "tagImg": "https://cphoto.asiae.co.kr/listimglink/6/2021051808531039781_1621295591.png",
+    "companyName": "팀블라인드",
+    "companyLocation": "서울특별시 강남구 역삼동 621-25",
+    "position": "iOS"
   }
 ]
