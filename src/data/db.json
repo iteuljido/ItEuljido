@@ -337,5 +337,15 @@
     "companyName": "팀블라인드",
     "companyLocation": "서울특별시 강남구 역삼동 621-25",
     "position": "iOS"
+  },
+  {
+    "name": "김경훈",
+    "generation": 4,
+    "profileImg": "https://user-images.githubusercontent.com/48943501/127284705-696db588-a867-48b6-aeba-8c2cd28d7f2f.jpg",
+    "tagImg": "https://user-images.githubusercontent.com/48943501/127284435-aeeb1458-15ae-4dbf-bcff-7cbd28556a0c.jpg",
+    "explanation": "똑닥",
+    "companyName": "비브로스",
+    "companyLocation": "서울특별시 영등포구 여의대로 108, 31층 (여의도동, 파크원 타워2동)",
+    "position": "Window"
   }
 ]
