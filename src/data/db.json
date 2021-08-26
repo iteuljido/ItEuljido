@@ -347,5 +347,15 @@
     "companyName": "비브로스",
     "companyLocation": "서울특별시 영등포구 여의대로 108, 31층 (여의도동, 파크원 타워2동)",
     "position": "Window"
+  },
+  {
+    "name": "김경원",
+    "generation": 4,
+    "profileImg": "",
+    "tagImg": "http://imsystem.kr/images/logo_1.png",
+    "explanation": "최강 임베 멋져",
+    "companyName": "IMSYSTEM",
+    "companyLocation": "대구 달성군 현풍읍 테크노중앙대로 333 R7",
+    "position": "Embedded"
   }
 ]
