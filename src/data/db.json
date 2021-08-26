@@ -154,9 +154,9 @@
     "generation": 3,
     "profileImg": "https://avatars.githubusercontent.com/u/39144276?v=4",
     "explanation": "S",
-    "tagImg": "",
-    "companyName": "비스키트",
-    "companyLocation": "서울 금천구 벚꽃로 298 1407호",
+    "tagImg": "http://teamo2.kr/wp-content/uploads/2021/04/teamo2-logo-h30.svg",
+    "companyName": "팀오투",
+    "companyLocation": "서울 강남구 봉은사로 215 KTS빌딩, 6층",
     "position": "FrontEnd"
   },
   {
@@ -307,5 +307,45 @@
     "companyName": "(주)페르소나",
     "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
     "position": "FrontEnd"
+  },
+  {
+    "name": "권순관",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/48983361?s=400&u=4139ec6e3bbf60b90342b4e415bb8d4e5c3babbd&v=4",
+    "explanation": "(주)페르소나 라고 할 뻔 가보자잇",
+    "tagImg": "",
+    "companyName": "(주)페르소나",
+    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
+    "position": "FrontEnd"
+  },
+  {
+    "name": "우현진",
+    "generation": 2,
+    "profileImg": "",
+    "explanation": "돈벌고싶어여",
+    "tagImg": "https://cdn.imweb.me/upload/S20210416bccc442510498/84ffa3c0f1638.png",
+    "companyName": "이지식스(엠블)",
+    "companyLocation": "서울시 강남구 봉은사로26길 32-3",
+    "position": "iOS"
+  },
+  {
+    "name": "강민석",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/51021614?v=4",
+    "explanation": "블라블라~",
+    "tagImg": "https://cphoto.asiae.co.kr/listimglink/6/2021051808531039781_1621295591.png",
+    "companyName": "팀블라인드",
+    "companyLocation": "서울특별시 강남구 역삼동 621-25",
+    "position": "iOS"
+  },
+  {
+    "name": "김경훈",
+    "generation": 4,
+    "profileImg": "https://user-images.githubusercontent.com/48943501/127284705-696db588-a867-48b6-aeba-8c2cd28d7f2f.jpg",
+    "tagImg": "https://user-images.githubusercontent.com/48943501/127284435-aeeb1458-15ae-4dbf-bcff-7cbd28556a0c.jpg",
+    "explanation": "똑닥",
+    "companyName": "비브로스",
+    "companyLocation": "서울특별시 영등포구 여의대로 108, 31층 (여의도동, 파크원 타워2동)",
+    "position": "Window"
   }
 ]
