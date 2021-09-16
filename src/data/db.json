@@ -366,5 +366,15 @@
     "companyName" : "여기어때컴퍼니",
     "companyLocation" : "서울특별시 강남구 봉은사로 479 (479타워, 5~11F)",
     "position" : "Android"
+  },
+  {
+    "name": "오해성",
+    "generation": 3,
+    "profileImg": "https://avatars.githubusercontent.com/u/74897099?v=4",
+    "explanation": "골드 딱대 ㅋㅋ",
+    "tagImg": "https://opgg-static.akamaized.net/icon/reverse.rectangle.png",
+    "companyName": "OP.GG",
+    "companyLocation": "서울 강남구 삼성로85길 35-6 (대치동) 목천빌딩",
+    "position": "FrontEnd"
   }
 ]
