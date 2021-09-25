@@ -21,7 +21,6 @@ const NavElemnetItem = memo(({ data, index, userSelector }: Props) => {
   } = data;
   const tagImgExist = tagImg !== '' ? tagImg : null;
   const coords = useCoords(companyLocation);
-  console.log(coords);
 
   return (
     <NavElement
