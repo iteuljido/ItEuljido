@@ -1,9 +1,9 @@
-import Map from "components/Map/Map";
-import { useEffect } from "react";
-import DB from "data/db.json";
-import _ from "lodash";
-import util from "util";
-import "./MapInfoElement.scss";
+import Map from 'components/Map/Map';
+import { useEffect } from 'react';
+import DB from 'data/db.json';
+import _ from 'lodash';
+import util from 'util';
+import './MapInfoElement.scss';
 
 const { kakao } = window;
 
@@ -25,7 +25,7 @@ export class MapSingleton {
     let lat = 36;
     let long = 127;
 
-    const container = document.getElementById("map");
+    const container = document.getElementById('map');
     const options = {
       center: new window.kakao.maps.LatLng(lat, long),
       level: 12,
@@ -43,7 +43,7 @@ export class MapSingleton {
 
     const groupByDuplicatedComapny = _.groupBy(
       duplicatedCompany,
-      "companyName"
+      'companyName'
     );
 
     let markerTemp = [] as any;
@@ -89,15 +89,15 @@ export class MapSingleton {
           yAnchor: 2.1,
         });
 
-        kakao.maps.event.addListener(marker, "click", () => {
+        kakao.maps.event.addListener(marker, 'click', () => {
           overlay.setMap(this.map);
         });
 
-        kakao.maps.event.addListener(this.map, "click", () => {
-          overlay.setMap(null);
-        });
+        // kakao.maps.event.addListener(this.map, 'click', () => {
+        //   overlay.setMap(null);
+        // });
 
-        kakao.maps.event.addListener(this.map, "zoom_changed", () => {
+        kakao.maps.event.addListener(this.map, 'zoom_changed', () => {
           let level = this.map.getLevel();
           if (level < 5) {
             overlay.setMap(this.map);
@@ -144,15 +144,15 @@ export class MapSingleton {
         yAnchor: 2.1,
       });
 
-      kakao.maps.event.addListener(marker, "click", () => {
+      kakao.maps.event.addListener(marker, 'click', () => {
         overlay.setMap(this.map);
       });
 
-      kakao.maps.event.addListener(this.map, "click", () => {
-        overlay.setMap(null);
-      });
+      // kakao.maps.event.addListener(marker, 'click', () => {
+      //   overlay.setMap(null);
+      // });
 
-      kakao.maps.event.addListener(this.map, "zoom_changed", () => {
+      kakao.maps.event.addListener(this.map, 'zoom_changed', () => {
         let level = this.map.getLevel();
         if (level < 6) {
           overlay.setMap(this.map);
@@ -172,7 +172,7 @@ export class MapSingleton {
       calculator: [1, 3, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
     });
 
-    kakao.maps.event.addListener(clusterer, "clusterclick", (cluster: any) => {
+    kakao.maps.event.addListener(clusterer, 'clusterclick', (cluster: any) => {
       level = this.map.getLevel() - 3;
 
       this.map.setLevel(level, { anchor: cluster.getCenter() });
