@@ -386,5 +386,15 @@
     "companyName": "클래스팅",
     "companyLocation": "서울시 강남구 삼성로85길 26, V&S빌딩 14층",
     "position": "FrontEnd"
+  },
+  {
+    "name": "최웅규",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/24535616?v=4",
+    "explanation": "코드싸개2",
+    "tagImg": "https://user-images.githubusercontent.com/48983361/121277542-c90fa100-c90b-11eb-994e-aae4d7d4a8a9.png",
+    "companyName": "자이닉스",
+    "companyLocation": "서울 구로구 디지털로31길 53 1101호",
+    "position": "Window"
   }
 ]
