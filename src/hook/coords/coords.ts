@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const useCoords = (location: string) => {
   const { kakao } = window;
@@ -7,8 +7,8 @@ const useCoords = (location: string) => {
   const [geocoderObj, setGeocoderObj] = useState<any>();
 
   useEffect(() => {
-    if (location === "" || location === undefined || location === null) {
-      throw new Error("locatio에 해당하는 값이 없습니다.");
+    if (location === '' || location === undefined || location === null) {
+      throw new Error('locatio에 해당하는 값이 없습니다.');
     }
     geocoder.addressSearch(location, (result: any) => {
       setGeocoderObj(new kakao.maps.LatLng(result[0].y, result[0].x));

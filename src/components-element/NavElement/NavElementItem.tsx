@@ -1,7 +1,7 @@
-import useCoords from "hook/coords/coords";
-import { memo } from "react";
-import { DBType } from "type/DBType/DBType";
-import NavElement from "./NavElement";
+import useCoords from 'hook/coords/coords';
+import { memo } from 'react';
+import { DBType } from 'type/DBType/DBType';
+import NavElement from './NavElement';
 
 type Props = {
   data: DBType;
@@ -19,7 +19,7 @@ const NavElemnetItem = memo(({ data, index, userSelector }: Props) => {
     type,
     tagImg,
   } = data;
-  const tagImgExist = tagImg !== "" ? tagImg : null;
+  const tagImgExist = tagImg !== '' ? tagImg : null;
   const coords = useCoords(companyLocation);
 
   return (
@@ -33,7 +33,7 @@ const NavElemnetItem = memo(({ data, index, userSelector }: Props) => {
       companyLocation={companyLocation}
       profileImg={profileImg}
       type={type}
-      tagImg={tagImgExist || ""}
+      tagImg={tagImgExist || ''}
     />
   );
 });

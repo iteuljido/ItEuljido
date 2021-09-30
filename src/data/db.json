@@ -297,7 +297,7 @@
     "companyName": "(주)직랩",
     "companyLocation": "서울 강남구 강남대로112길 32, 4층",
     "position": "iOS"
-  },  
+  },
   {
     "name": "권용빈",
     "generation": 4,
@@ -359,13 +359,13 @@
     "position": "Embedded"
   },
   {
-    "name" : "김주엽",
-    "generation" : 4,
-    "profileImg" : "https://user-images.githubusercontent.com/49600974/131273209-74e2fb0c-e40d-4e33-bc95-6dd7f2d9fa7b.jpeg",
-    "tagImg" : "https://user-images.githubusercontent.com/49600974/131273288-ea8fb7b4-c7a8-445b-b363-48da2057f8a0.jpg",
-    "companyName" : "여기어때컴퍼니",
-    "companyLocation" : "서울특별시 강남구 봉은사로 479 (479타워, 5~11F)",
-    "position" : "Android"
+    "name": "김주엽",
+    "generation": 4,
+    "profileImg": "https://user-images.githubusercontent.com/49600974/131273209-74e2fb0c-e40d-4e33-bc95-6dd7f2d9fa7b.jpeg",
+    "tagImg": "https://user-images.githubusercontent.com/49600974/131273288-ea8fb7b4-c7a8-445b-b363-48da2057f8a0.jpg",
+    "companyName": "여기어때컴퍼니",
+    "companyLocation": "서울특별시 강남구 봉은사로 479 (479타워, 5~11F)",
+    "position": "Android"
   },
   {
     "name": "오해성",
@@ -375,6 +375,16 @@
     "tagImg": "https://opgg-static.akamaized.net/icon/reverse.rectangle.png",
     "companyName": "OP.GG",
     "companyLocation": "서울 강남구 삼성로85길 35-6 (대치동) 목천빌딩",
+    "position": "FrontEnd"
+  },
+  {
+    "name": "임규민",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/52942566?v=4",
+    "tagImg": "https://user-images.githubusercontent.com/52942566/133919808-a7ec2cf6-5fc2-4906-81a4-c9f2f724ecad.png",
+    "explanation": ":wink:",
+    "companyName": "클래스팅",
+    "companyLocation": "서울시 강남구 삼성로85길 26, V&S빌딩 14층",
     "position": "FrontEnd"
   },
   {
