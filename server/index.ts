@@ -1,4 +1,11 @@
-import { listenAndServe } from "https://deno.land/std@0.109.0/http/server.ts";
+import { copy } from "https://deno.land/std@0.109.0/io/util.ts";
 
-console.log("http://localhost:8000/");
-listenAndServe(":8000", (req) => new Response("Hello World\n"));
+const hostname = "127.0.0.1";
+const port = 8080;
+const listener = Deno.listen({ hostname, port });
+
+console.log(`Listening on ${hostname}:${port}`);
+
+for await (const conn of listener) {
+  copy(conn, conn);
+}
