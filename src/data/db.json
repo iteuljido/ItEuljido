@@ -396,5 +396,15 @@
     "companyName": "자이닉스",
     "companyLocation": "서울 구로구 디지털로31길 53 1101호",
     "position": "Window"
-  }
+  },
+  {
+    "name": "정성화",
+    "generation": 2,
+    "profileImg": "",
+    "explanation": "HI",
+    "tagImg": "",
+    "companyName": "정성화",
+    "companyLocation": "서울특별시 강남구 테헤란로 419, 21층",
+    "position": "BackEnd"
+  },
 ]
