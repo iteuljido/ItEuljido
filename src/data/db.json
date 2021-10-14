@@ -309,16 +309,6 @@
     "position": "FrontEnd"
   },
   {
-    "name": "권순관",
-    "generation": 4,
-    "profileImg": "https://avatars.githubusercontent.com/u/48983361?s=400&u=4139ec6e3bbf60b90342b4e415bb8d4e5c3babbd&v=4",
-    "explanation": "(주)페르소나 라고 할 뻔 가보자잇",
-    "tagImg": "",
-    "companyName": "(주)페르소나",
-    "companyLocation": "대구광역시 동구 동대구로 461(신천동) (재)대구경북디자인센터 1004호 (주)페르소나",
-    "position": "FrontEnd"
-  },
-  {
     "name": "우현진",
     "generation": 2,
     "profileImg": "",
@@ -382,7 +372,7 @@
     "generation": 4,
     "profileImg": "https://avatars.githubusercontent.com/u/52942566?v=4",
     "tagImg": "https://user-images.githubusercontent.com/52942566/133919808-a7ec2cf6-5fc2-4906-81a4-c9f2f724ecad.png",
-    "explanation": ":wink:",
+    "explanation": "😜",
     "companyName": "클래스팅",
     "companyLocation": "서울시 강남구 삼성로85길 26, V&S빌딩 14층",
     "position": "FrontEnd"
@@ -406,5 +396,15 @@
     "companyName": "더스윙",
     "companyLocation": "서울특별시 강남구 테헤란로 419, 21층",
     "position": "BackEnd"
+  },
+  {
+    "name": "권순관",
+    "generation": 4,
+    "profileImg": "https://avatars.githubusercontent.com/u/48983361?v=4",
+    "explanation": "자유",
+    "tagImg": "",
+    "companyName": "피플펀드컴퍼니",
+    "companyLocation": "서울특별시 강남구 대치4동 선릉로 428 18층",
+    "position": "FrontEnd"
   }
 ]
