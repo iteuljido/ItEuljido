@@ -25,7 +25,7 @@
     "profileImg": "https://avatars.githubusercontent.com/u/50559538?v=4",
     "explanation": "😄",
     "tagImg": "",
-    "companyName": "마미톡",
+    "companyName": "(주)휴먼스케이프",
     "companyLocation": "서울 강남구 삼성1동 봉은사로86길 6 (602호)",
     "position": "Android"
   },
@@ -415,6 +415,16 @@
     "tagImg": "https://user-images.githubusercontent.com/49791336/147249835-dbb24fce-5c40-42fe-aad3-9f52ad2a6a7b.png",
     "companyName": "Riiid",
     "companyLocation": "서울특별시 강남구 테헤란로 521 파르나스타워 10층",
+    "position": "FrontEnd"
+  },
+  {
+    "name": "박휘겸",
+    "generation": 1,
+    "profileImg": "https://avatars.githubusercontent.com/u/38199103?v=4",
+    "explanation": "현재 웹 프런트/백엔드 주니어 뽑고 있어요…관심 있으면 저한테 연락주세요 !!",
+    "tagImg": "",
+    "companyName": "민병철유폰",
+    "companyLocation": "서울특별시 강남구 테헤란로26길 14, 4층 (위워크 역삼 2호점)",
     "position": "FrontEnd"
   }
 ]
